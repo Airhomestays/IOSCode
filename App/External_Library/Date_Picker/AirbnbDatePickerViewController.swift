@@ -839,10 +839,7 @@ public class AirbnbDatePickerViewController: UICollectionViewController {
                 isSelectedstartDate = true
                 selectedStartDate = selectedDate
                 startDateIndexPath = indexPath
-                
-                selectInBetweenCells()
-                
-                
+                //selectInBetweenCells()
             }
             
             else if selectedEndDate == nil && selectedDate > selectedStartDate! {
