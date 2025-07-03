@@ -1,0 +1,41 @@
+query getPendingUserReviews($currentPage: Int) {
+  getPendingUserReviews(currentPage: $currentPage) {
+    status
+    errorMessage
+    count
+    currentPage
+    results {
+      id
+      listId
+     
+      listData{
+         id
+         title
+         listPhotos {
+              id
+              name
+          }
+        }
+    listingData{
+        title
+        }
+      hostId
+      guestId
+      hostData {
+        userId
+        profileId
+        firstName
+        lastName
+        picture
+      }
+      guestData {
+        userId
+        profileId
+        firstName
+        lastName
+        picture
+      }
+    }
+  }
+}
+

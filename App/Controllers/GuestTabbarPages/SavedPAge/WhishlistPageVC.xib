@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="linetocircular.ttf">
+            <string>Circular-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WhishlistPageVC" customModule="App" customModuleProvider="target">
+            <connections>
+                <outlet property="addBtn" destination="Ynw-el-Q0N" id="NWq-Cr-70w"/>
+                <outlet property="chooseLabel" destination="mYU-2d-iQc" id="acn-At-pLX"/>
+                <outlet property="noWhishlistView" destination="dwW-6c-Ki7" id="Men-c3-vmk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="whishlistCollection" destination="iT5-Da-t6w" id="Juo-2d-vOW"/>
+                <outlet property="whishlistView" destination="BlX-o2-1Dd" id="UPb-VZ-TNS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BlX-o2-1Dd">
+                    <rect key="frame" x="0.0" y="548.66666666666663" width="390" height="295.33333333333337"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynw-el-Q0N">
+                            <rect key="frame" x="346.66666666666669" y="-7" width="23.333333333333314" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="x81-tw-V6A"/>
+                            </constraints>
+                            <state key="normal" image="add"/>
+                            <connections>
+                                <action selector="addBtnTapped:" destination="-1" eventType="touchUpInside" id="ohf-Ds-sVY"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a list" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYU-2d-iQc">
+                            <rect key="frame" x="20" y="13" width="279" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="53M-tY-XT4"/>
+                                <constraint firstAttribute="width" constant="279" id="Ei4-aS-psr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="25"/>
+                            <color key="textColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="0.78903499119718312" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No wishlist groups added. please create a group by clicking &quot;+&quot; icon." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwW-6c-Ki7">
+                            <rect key="frame" x="20" y="123.00000000000001" width="350" height="50.666666666666671"/>
+                            <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="iT5-Da-t6w">
+                            <rect key="frame" x="15" y="61.333333333333371" width="360" height="219"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UuI-Ka-Qr7">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="nrO-HK-r96"/>
+                                <outlet property="delegate" destination="-1" id="4zt-1H-8G5"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="mYU-2d-iQc" firstAttribute="leading" secondItem="BlX-o2-1Dd" secondAttribute="leading" constant="20" id="0fe-EZ-tyF"/>
+                        <constraint firstAttribute="trailing" secondItem="dwW-6c-Ki7" secondAttribute="trailing" constant="20" id="6xr-1y-peY"/>
+                        <constraint firstAttribute="trailing" secondItem="Ynw-el-Q0N" secondAttribute="trailing" constant="20" id="Aww-PA-F0Y"/>
+                        <constraint firstAttribute="bottom" secondItem="iT5-Da-t6w" secondAttribute="bottom" constant="15" id="KYj-f1-dtc"/>
+                        <constraint firstItem="Ynw-el-Q0N" firstAttribute="centerY" secondItem="mYU-2d-iQc" secondAttribute="centerY" id="MiH-Qi-pid"/>
+                        <constraint firstAttribute="trailing" secondItem="iT5-Da-t6w" secondAttribute="trailing" constant="15" id="W5A-fF-I3p"/>
+                        <constraint firstItem="mYU-2d-iQc" firstAttribute="top" secondItem="BlX-o2-1Dd" secondAttribute="top" constant="13" id="e4I-Ud-caV"/>
+                        <constraint firstItem="dwW-6c-Ki7" firstAttribute="leading" secondItem="BlX-o2-1Dd" secondAttribute="leading" constant="20" id="eT3-Ss-YCQ"/>
+                        <constraint firstItem="dwW-6c-Ki7" firstAttribute="top" secondItem="Ynw-el-Q0N" secondAttribute="bottom" constant="50" id="vxA-be-cXT"/>
+                        <constraint firstItem="iT5-Da-t6w" firstAttribute="top" secondItem="mYU-2d-iQc" secondAttribute="bottom" constant="8.5" id="yJf-Nu-8x8"/>
+                        <constraint firstItem="iT5-Da-t6w" firstAttribute="leading" secondItem="BlX-o2-1Dd" secondAttribute="leading" constant="15" id="ydl-gi-bz7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.72791043133802813" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="BlX-o2-1Dd" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="1cE-BA-KLd"/>
+                <constraint firstItem="BlX-o2-1Dd" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Vfn-oE-hd5"/>
+                <constraint firstItem="BlX-o2-1Dd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="esp-Hs-1JO"/>
+                <constraint firstItem="BlX-o2-1Dd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hXy-qg-73W"/>
+                <constraint firstItem="BlX-o2-1Dd" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.35" id="ire-4c-Og8"/>
+                <constraint firstItem="BlX-o2-1Dd" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="rjX-AB-jCo"/>
+                <constraint firstItem="BlX-o2-1Dd" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="yNn-Ga-A85"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="116.49175412293854"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add" width="23.215000152587891" height="23.215000152587891"/>
+    </resources>
+</document>

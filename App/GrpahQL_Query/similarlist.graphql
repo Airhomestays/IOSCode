@@ -1,0 +1,127 @@
+# Similar Listing
+query getSimilarListing (
+$lat: Float,
+$lng: Float,
+$listId: Int
+) {
+getSimilarListing (
+listId: $listId,
+lat: $lat,
+lng: $lng
+) {
+results {
+id
+title
+personCapacity
+beds
+bookingType
+reviewsCount,
+reviewsStarRating,
+listingData {
+basePrice
+currency
+cleaningPrice
+}
+wishListStatus
+isListOwner
+listPhotoName
+roomType
+}
+status
+}
+}
+
+#user review
+
+query userReviews($ownerType: String, $currentPage: Int, $profileId: Int) {
+userReviews(ownerType: $ownerType, currentPage: $currentPage, profileId: $profileId) {
+results {
+id
+reservationId
+listId
+authorId
+userId
+reviewContent
+rating
+parentId
+automated
+createdAt
+status
+isAdmin
+yourReviewsCount
+reviewsCount
+authorData {
+...profileFields
+}
+userData {
+...profileFields
+}
+response {
+id
+reservationId
+listId
+authorId
+userId
+reviewContent
+rating
+parentId
+automated
+createdAt
+status
+isAdmin
+authorData {
+...profileFields
+}
+userData {
+...profileFields
+}
+}
+}
+status
+errorMessage
+}
+}
+fragment profileFields on userProfile {
+profileId
+firstName
+lastName
+picture
+location
+}
+
+query getReviewsList(
+    $listId: Int,
+    $currentPage: Int,
+    $hostId: String!
+) {
+    getReviews(
+        listId: $listId,
+        currentPage: $currentPage,
+        hostId: $hostId
+    ) {
+        results {
+          id
+          userId
+          reviewContent
+          rating
+          createdAt
+          isAdmin
+          userData{
+            userId
+            profileId
+            firstName
+            lastName
+            picture
+          }
+          authorData{
+            userId
+            profileId
+            firstName
+            lastName
+            picture
+          }
+        }
+        status
+        count
+    }
+}

@@ -1,0 +1,7 @@
+mutation writeUserReview($reservationId: Int!, $listId: Int!, $reviewContent: String!, $rating: Float!, $receiverId: String!) {
+  writeUserReview(reservationId: $reservationId, listId: $listId, reviewContent: $reviewContent, rating: $rating, receiverId: $receiverId) {
+    status
+    errorMessage
+  }
+}
+

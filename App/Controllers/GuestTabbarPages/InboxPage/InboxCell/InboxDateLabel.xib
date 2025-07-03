@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="linetocircular.ttf">
+            <string>Circular-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InboxDateLabel" rowHeight="111" id="KGk-i7-Jjw" customClass="InboxDateLabel" customModule="App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="371" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KHb-k3-6bx">
+                        <rect key="frame" x="20" y="0.0" width="331" height="1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="yiK-YQ-u0T"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDE-gI-Fdj">
+                        <rect key="frame" x="106.5" y="25" width="15" height="15"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="9tn-Yz-Egn"/>
+                            <constraint firstAttribute="height" constant="15" id="Qnp-Ip-KqB"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Request to Book" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0Z-f6-gI4">
+                        <rect key="frame" x="126.5" y="15" width="118" height="35"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wed, 22 Sep 2019 - Fri, 27 Sep 2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aw9-yL-1b8">
+                        <rect key="frame" x="59.5" y="60" width="252" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26a-NI-Di3">
+                        <rect key="frame" x="20" y="110" width="331" height="1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="yLm-MX-Ram"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="26a-NI-Di3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="3mg-kO-j4h"/>
+                    <constraint firstItem="cDE-gI-Fdj" firstAttribute="trailing" secondItem="x0Z-f6-gI4" secondAttribute="leading" constant="-5" id="72H-PL-OIP"/>
+                    <constraint firstAttribute="bottom" secondItem="aw9-yL-1b8" secondAttribute="bottom" constant="30" id="AWb-UK-mD4"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aw9-yL-1b8" secondAttribute="trailing" constant="40" id="Alw-SJ-Lkq"/>
+                    <constraint firstItem="KHb-k3-6bx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="BR8-rp-euw"/>
+                    <constraint firstAttribute="bottom" secondItem="26a-NI-Di3" secondAttribute="bottom" id="EeS-Pw-UNd"/>
+                    <constraint firstItem="cDE-gI-Fdj" firstAttribute="centerY" secondItem="x0Z-f6-gI4" secondAttribute="centerY" id="Isw-ep-u7K"/>
+                    <constraint firstItem="x0Z-f6-gI4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Mcc-TV-tA5"/>
+                    <constraint firstItem="26a-NI-Di3" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="OzE-93-4Ao"/>
+                    <constraint firstItem="x0Z-f6-gI4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="70" id="T0p-CL-z8X"/>
+                    <constraint firstItem="aw9-yL-1b8" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Xty-FH-05R"/>
+                    <constraint firstItem="x0Z-f6-gI4" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="YWK-J5-0Qx"/>
+                    <constraint firstItem="aw9-yL-1b8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="aqA-FY-Dub"/>
+                    <constraint firstAttribute="trailing" secondItem="KHb-k3-6bx" secondAttribute="trailing" constant="20" id="euv-3O-m0L"/>
+                    <constraint firstItem="aw9-yL-1b8" firstAttribute="top" secondItem="x0Z-f6-gI4" secondAttribute="bottom" constant="10" id="fsa-BW-Z8j"/>
+                    <constraint firstItem="KHb-k3-6bx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="htz-VA-HkW"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="x0Z-f6-gI4" secondAttribute="trailing" constant="70" id="uRd-Uo-WfF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="bottomLineView" destination="26a-NI-Di3" id="mXk-4W-pos"/>
+                <outlet property="circleIndicationView" destination="cDE-gI-Fdj" id="6kd-G4-jYw"/>
+                <outlet property="dateLabel" destination="aw9-yL-1b8" id="0w7-Jg-MKS"/>
+                <outlet property="topLineView" destination="KHb-k3-6bx" id="mfP-Uf-H4Z"/>
+                <outlet property="typeLAbel" destination="x0Z-f6-gI4" id="4Ak-MU-cLE"/>
+            </connections>
+            <point key="canvasLocation" x="154.34782608695653" y="154.35267857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,11 @@
+query getApplicationVersionInfo($appType: String!, $version: String!) {
+    getApplicationVersionInfo(appType: $appType, version: $version) {
+        status
+        errorMessage
+        result {
+            appStoreUrl
+            playStoreUrl
+        }
+    }
+}
+

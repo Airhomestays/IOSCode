@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="lineto-circular-pro-medium.ttf">
+            <string>Circular-Medium</string>
+        </array>
+        <array key="linetocircular.ttf">
+            <string>Circular-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="textfieldcell" rowHeight="122" id="KGk-i7-Jjw" customClass="TextFieldCell" customModule="App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="285" height="139"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="285" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 1" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KvH-UM-eJz">
+                        <rect key="frame" x="20" y="0.0" width="245" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="JvK-Og-MIg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Medium" family="Circular" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jF4-EG-q7p">
+                        <rect key="frame" x="25" y="34" width="240" height="17"/>
+                        <fontDescription key="fontDescription" name="Circular-Medium" family="Circular" pointSize="16"/>
+                        <color key="textColor" red="0.40784313725490196" green="0.40784313725490196" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cEh-pK-0fC" customClass="CustomUITextField" customModule="App" customModuleProvider="target">
+                        <rect key="frame" x="24" y="61" width="241" height="47"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="47" id="vIs-0r-TYD"/>
+                        </constraints>
+                        <color key="textColor" systemColor="darkTextColor"/>
+                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="18"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="pT8-fN-IaM"/>
+                        </connections>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p8w-5K-i6L">
+                        <rect key="frame" x="20" y="124" width="248" height="0.0"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="Jxp-bb-qca">
+                        <rect key="frame" x="240" y="79.5" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="6Wp-ki-hrJ"/>
+                            <constraint firstAttribute="width" constant="10" id="I8b-Fh-Kdc"/>
+                        </constraints>
+                    </imageView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxF-Ax-0VS">
+                        <rect key="frame" x="211" y="61" width="54" height="47"/>
+                        <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="54" id="0e1-Xl-ceM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="p8w-5K-i6L" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="0du-NV-mU3"/>
+                    <constraint firstAttribute="bottom" secondItem="p8w-5K-i6L" secondAttribute="bottom" constant="15" id="5Tz-aA-eH4"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Jxp-bb-qca" secondAttribute="trailing" constant="19" id="IMi-0F-WC5"/>
+                    <constraint firstAttribute="trailing" secondItem="p8w-5K-i6L" secondAttribute="trailing" constant="17" id="JG0-CG-au5"/>
+                    <constraint firstAttribute="trailing" secondItem="KvH-UM-eJz" secondAttribute="trailing" constant="20" id="M1N-JW-hSN"/>
+                    <constraint firstItem="cEh-pK-0fC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="O2f-LE-dpe"/>
+                    <constraint firstItem="KvH-UM-eJz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ord-BU-Rtx"/>
+                    <constraint firstItem="cEh-pK-0fC" firstAttribute="top" secondItem="jF4-EG-q7p" secondAttribute="bottom" constant="10" id="Qh1-Bd-cWU"/>
+                    <constraint firstItem="qxF-Ax-0VS" firstAttribute="trailing" secondItem="cEh-pK-0fC" secondAttribute="trailing" id="RAs-zG-VXi"/>
+                    <constraint firstItem="qxF-Ax-0VS" firstAttribute="top" secondItem="cEh-pK-0fC" secondAttribute="top" id="dPN-6X-DEh"/>
+                    <constraint firstItem="Jxp-bb-qca" firstAttribute="centerY" secondItem="cEh-pK-0fC" secondAttribute="centerY" id="etl-xE-JSH"/>
+                    <constraint firstItem="qxF-Ax-0VS" firstAttribute="bottom" secondItem="cEh-pK-0fC" secondAttribute="bottom" id="fnu-c8-vuA"/>
+                    <constraint firstItem="KvH-UM-eJz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="fr1-zE-vf2"/>
+                    <constraint firstAttribute="trailing" secondItem="jF4-EG-q7p" secondAttribute="trailing" constant="20" id="g4E-sF-BgX"/>
+                    <constraint firstAttribute="trailing" secondItem="cEh-pK-0fC" secondAttribute="trailing" constant="20" id="iLr-GJ-qAv"/>
+                    <constraint firstItem="jF4-EG-q7p" firstAttribute="top" secondItem="KvH-UM-eJz" secondAttribute="bottom" constant="15" id="lV6-Oa-zkT"/>
+                    <constraint firstItem="jF4-EG-q7p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="pa3-Hn-8BL"/>
+                    <constraint firstItem="p8w-5K-i6L" firstAttribute="top" secondItem="cEh-pK-0fC" secondAttribute="bottom" constant="16" id="uru-KH-GgM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imgDownArrow" destination="Jxp-bb-qca" id="clo-Bj-mP7"/>
+                <outlet property="lblPercentage" destination="qxF-Ax-0VS" id="gm4-7I-kPw"/>
+                <outlet property="lineLabel" destination="p8w-5K-i6L" id="ACI-V7-30f"/>
+                <outlet property="linebottomconstant" destination="5Tz-aA-eH4" id="n4C-jE-8PM"/>
+                <outlet property="linetopconstant" destination="uru-KH-GgM" id="bVq-rs-ZLr"/>
+                <outlet property="queryTitleLbl" destination="jF4-EG-q7p" id="Q6f-0i-qZn"/>
+                <outlet property="stepNumberLblTopConstraint" destination="lV6-Oa-zkT" id="fzg-AI-wcW"/>
+                <outlet property="stepOneBottom" destination="lV6-Oa-zkT" id="ohQ-Wu-qLe"/>
+                <outlet property="stepOneHeight" destination="JvK-Og-MIg" id="OVM-vN-v7n"/>
+                <outlet property="stepnumberLbl" destination="KvH-UM-eJz" id="vyU-On-EPt"/>
+                <outlet property="txtField" destination="cEh-pK-0fC" id="pJi-dE-JRk"/>
+            </connections>
+            <point key="canvasLocation" x="109.42028985507247" y="146.31696428571428"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="cEh-pK-0fC">
+            <size key="intrinsicContentSize" width="34" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="downArrow" width="10" height="5.5"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

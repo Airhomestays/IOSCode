@@ -1,0 +1,3 @@
+mutation confirmPayPalExecute( $paymentId: String!, $payerId: String!) {
+confirmPayPalExecute( paymentId: $paymentId, payerId: $payerId) { __typename results { __typename id listId hostId guestId checkIn checkOut guests message basePrice cleaningPrice currency discount discountType guestServiceFee hostServiceFee total confirmationCode createdAt reservationState paymentState } status errorMessage   reservationId  } }
+

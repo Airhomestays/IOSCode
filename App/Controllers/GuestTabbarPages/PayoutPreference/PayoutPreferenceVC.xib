@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="lineto-circular-pro-medium.ttf">
+            <string>Circular-Medium</string>
+        </array>
+        <array key="linetocircular.ttf">
+            <string>Circular-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayoutPreferenceVC" customModule="App" customModuleProvider="target">
+            <connections>
+                <outlet property="backBtn" destination="xpK-3y-ZfQ" id="a81-vz-0uA"/>
+                <outlet property="btnAddPayout" destination="YbJ-dA-E7n" id="YNk-xX-2VX"/>
+                <outlet property="btnUpdate" destination="9Y1-Rn-6Ky" id="9AE-NW-DWb"/>
+                <outlet property="errorLabel" destination="xbK-wp-Mpw" id="wgj-Be-cU7"/>
+                <outlet property="headerLabel" destination="dBJ-RO-CWW" id="I54-Xv-Sgh"/>
+                <outlet property="nodataview" destination="gAW-5n-5zX" id="uHF-el-Fd9"/>
+                <outlet property="nopayoutLabel" destination="cVi-sy-Oov" id="udt-df-MnU"/>
+                <outlet property="offlineview" destination="Nmv-Q0-LD9" id="ypZ-4w-Tfj"/>
+                <outlet property="payoutLabel" destination="5RQ-hR-rhf" id="B7Q-b3-4Hy"/>
+                <outlet property="payoutTable" destination="vXo-yX-two" id="zcq-of-Ffe"/>
+                <outlet property="retryBtn" destination="z1v-5r-jxa" id="viE-0f-ytz"/>
+                <outlet property="topContView" destination="ddf-1I-Hax" id="lzU-eg-KWO"/>
+                <outlet property="topView" destination="1nT-5Z-aTc" id="Fak-yp-8Kh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddf-1I-Hax">
+                    <rect key="frame" x="20" y="118" width="331" height="46"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fV6-eT-4rZ">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="46"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbJ-dA-E7n">
+                                    <rect key="frame" x="0.0" y="0.0" width="160.5" height="46"/>
+                                    <inset key="imageEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                    <state key="normal" title="  Add payout ethod  " image="addpayout_plus">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="addBtnTapped:" destination="-1" eventType="touchUpInside" id="ONC-xo-vPS"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Y1-Rn-6Ky">
+                                    <rect key="frame" x="170.5" y="0.0" width="160.5" height="46"/>
+                                    <color key="backgroundColor" red="0.0" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="46" id="zyp-tp-Egm"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Circular-Medium" family="Circular" pointSize="18"/>
+                                    <state key="normal" title="Il prossimo">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="actionUpdate:" destination="-1" eventType="touchUpInside" id="Ovu-GL-yf3"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97254901960784312" green="0.96862745098039216" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="0c9-Iw-4IW"/>
+                        <constraint firstItem="fV6-eT-4rZ" firstAttribute="leading" secondItem="ddf-1I-Hax" secondAttribute="leading" id="4Np-jW-5BS"/>
+                        <constraint firstAttribute="bottom" secondItem="fV6-eT-4rZ" secondAttribute="bottom" id="6cS-AQ-hzq"/>
+                        <constraint firstItem="fV6-eT-4rZ" firstAttribute="top" secondItem="ddf-1I-Hax" secondAttribute="top" id="DKT-f5-Y51"/>
+                        <constraint firstAttribute="trailing" secondItem="fV6-eT-4rZ" secondAttribute="trailing" id="kXT-BL-43Z"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="23"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskstoBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="vXo-yX-two">
+                    <rect key="frame" x="0.0" y="171" width="375" height="496"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="TxZ-2F-QR5"/>
+                        <outlet property="delegate" destination="-1" id="EdD-hj-okI"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAW-5n-5zX">
+                    <rect key="frame" x="0.0" y="171" width="375" height="496"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEb-7m-76S">
+                            <rect key="frame" x="20" y="120" width="335" height="1"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No payout methods" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVi-sy-Oov">
+                            <rect key="frame" x="20" y="85" width="327" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="18"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Payout methods" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RQ-hR-rhf">
+                            <rect key="frame" x="20" y="8" width="279" height="40"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Circular-Medium" family="Circular" pointSize="28"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.79995184075342463" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nmv-Q0-LD9">
+                    <rect key="frame" x="0.0" y="306" width="375" height="55"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbK-wp-Mpw">
+                            <rect key="frame" x="16" y="8" width="230" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Error ">
+                                    <attributes>
+                                        <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" metaFont="system" size="15"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="You are currently offline">
+                                    <attributes>
+                                        <color key="NSColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" metaFont="system" size="15"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="z1v-5r-jxa">
+                            <rect key="frame" x="275" y="8" width="91" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="13"/>
+                            <state key="normal" title="RETRY">
+                                <color key="titleColor" red="0.0" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="retryBtnTapped:" destination="-1" eventType="touchUpInside" id="LEA-Qb-qze"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1nT-5Z-aTc">
+                    <rect key="frame" x="0.0" y="20" width="375" height="80"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpK-3y-ZfQ">
+                            <rect key="frame" x="20" y="35" width="36" height="36"/>
+                            <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="ELW-ZV-EoH"/>
+                                <constraint firstAttribute="width" constant="36" id="uCw-BD-PPt"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                            <state key="normal" image="back_black"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="18"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="beckBtnTapped:" destination="-1" eventType="touchUpInside" id="1Oi-xj-Sob"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBJ-RO-CWW">
+                            <rect key="frame" x="73" y="42.5" width="278" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="5bg-9m-EJN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="AA0-5d-rUd"/>
+                        <constraint firstItem="dBJ-RO-CWW" firstAttribute="centerY" secondItem="xpK-3y-ZfQ" secondAttribute="centerY" id="Azb-W0-6NE"/>
+                        <constraint firstItem="xpK-3y-ZfQ" firstAttribute="top" secondItem="1nT-5Z-aTc" secondAttribute="top" constant="35" id="TyZ-TC-iiS"/>
+                        <constraint firstItem="xpK-3y-ZfQ" firstAttribute="leading" secondItem="1nT-5Z-aTc" secondAttribute="leading" constant="20" id="hyh-bq-bjZ"/>
+                        <constraint firstItem="dBJ-RO-CWW" firstAttribute="leading" secondItem="xpK-3y-ZfQ" secondAttribute="trailing" constant="17" id="lsR-UQ-zGc"/>
+                        <constraint firstAttribute="trailing" secondItem="dBJ-RO-CWW" secondAttribute="trailing" constant="24" id="nGf-2e-2wT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ddf-1I-Hax" secondAttribute="trailing" constant="24" id="5NV-k6-9iT"/>
+                <constraint firstItem="vXo-yX-two" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Dp4-h6-uKN"/>
+                <constraint firstItem="1nT-5Z-aTc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="H7T-XW-t3a"/>
+                <constraint firstItem="vXo-yX-two" firstAttribute="top" secondItem="1nT-5Z-aTc" secondAttribute="bottom" constant="71" id="Kl3-9N-Lh8"/>
+                <constraint firstItem="1nT-5Z-aTc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Nqc-RI-tqK"/>
+                <constraint firstItem="ddf-1I-Hax" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Px7-DT-e67"/>
+                <constraint firstItem="gAW-5n-5zX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Un6-qD-4oz"/>
+                <constraint firstItem="gAW-5n-5zX" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="W1z-IO-T7d"/>
+                <constraint firstItem="1nT-5Z-aTc" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="YQ1-Je-ccj"/>
+                <constraint firstItem="vXo-yX-two" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="a26-92-oqi"/>
+                <constraint firstItem="gAW-5n-5zX" firstAttribute="top" secondItem="1nT-5Z-aTc" secondAttribute="bottom" constant="71" id="d4U-1c-wJo"/>
+                <constraint firstItem="vXo-yX-two" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ezg-Ng-iVi"/>
+                <constraint firstItem="ddf-1I-Hax" firstAttribute="top" secondItem="1nT-5Z-aTc" secondAttribute="bottom" constant="18" id="laG-aU-X0r"/>
+                <constraint firstItem="gAW-5n-5zX" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="xOy-WP-ySE"/>
+            </constraints>
+            <point key="canvasLocation" x="44" y="43.628185907046479"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="addpayout_plus" width="16" height="16"/>
+        <image name="back_black" width="25" height="25"/>
+    </resources>
+</document>

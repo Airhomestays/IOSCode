@@ -1,0 +1,107 @@
+#Trips
+query getAllReservation ($userType: String, $currentPage: Int, $dateFilter: String) {
+getAllReservation(userType: $userType, currentPage: $currentPage, dateFilter: $dateFilter){
+result {
+id
+listId
+hostId
+guestId
+checkIn
+checkOut
+nights
+guests
+guestServiceFee
+hostServiceFee
+reservationState
+total
+currency
+cancellationPolicy
+messageData {
+id
+}
+listData {
+id
+title
+street
+city
+state
+country
+zipcode
+reviewsCount
+reviewsStarRating
+roomType
+bookingType
+wishListStatus
+listPhotoName
+listPhotos {
+id
+name
+}
+listingData {
+currency
+basePrice
+checkInStart
+checkInEnd
+}
+settingsData {
+id
+listsettings {
+id
+itemName
+}
+}
+}
+hostData {
+profileId
+displayName
+picture
+firstName
+phoneNumber
+fullPhoneNumber
+userId
+userData {
+email
+}
+userVerification{
+     id
+     isEmailConfirmed
+     isFacebookConnected
+     isGoogleConnected
+     isIdVerification
+     isPhoneVerified
+     status
+     }
+}
+guestData {
+profileId
+displayName
+picture
+phoneNumber
+fullPhoneNumber
+firstName
+userId
+userData {
+email
+}
+userVerification{
+     id
+     isEmailConfirmed
+     isFacebookConnected
+     isGoogleConnected
+     isIdVerification
+     isPhoneVerified
+     status
+     }
+}
+hostUser{
+      email
+   }
+   guestUser{
+      email
+   }
+}
+count
+status
+errorMessage
+}
+}

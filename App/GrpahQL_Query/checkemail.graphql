@@ -1,0 +1,15 @@
+query CheckEmailExists($email: String!) {
+validateEmailExist (email: $email) {
+status
+errorMessage
+}
+}
+
+
+mutation ForgotPassword ($email: String!) {
+userForgotPassword (email: $email) {
+status
+forgotLink
+errorMessage
+}
+}

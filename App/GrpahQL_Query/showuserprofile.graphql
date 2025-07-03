@@ -1,0 +1,31 @@
+query showUserProfile($profileId: Int, $isUser: Boolean) {
+showUserProfile(profileId: $profileId, isUser: $isUser) {
+results {
+userId
+profileId
+firstName
+lastName
+dateOfBirth
+gender
+phoneNumber
+preferredLanguage
+preferredCurrency
+location
+info
+createdAt
+picture
+reviewsCount
+userVerifiedInfo{
+id
+isEmailConfirmed
+isFacebookConnected
+isGoogleConnected
+isIdVerification
+isPhoneVerified
+status
+}
+}
+status
+errorMessage
+}
+}

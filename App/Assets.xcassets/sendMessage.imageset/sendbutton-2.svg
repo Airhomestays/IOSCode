@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77" height="77" viewBox="0 0 77 77">
+  <defs>
+    <filter id="Ellipse_1" x="0" y="0" width="77" height="77" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5.5" result="blur"/>
+      <feFlood flood-color="#1296c8" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="send_button" data-name="send button" transform="translate(-327.5 -780.5)">
+    <g transform="matrix(1, 0, 0, 1, 327.5, 780.5)" filter="url(#Ellipse_1)">
+      <circle id="Ellipse_1-2" data-name="Ellipse 1" cx="22" cy="22" r="22" transform="translate(16.5 11.5)" fill="#1296c8"/>
+    </g>
+    <path id="send_1_" data-name="send (1)" d="M20.362,0,0,11.454l6.507,2.41,10.037-9.41L8.91,14.754l.006,0-.008,0v5.609L12.558,16.1l4.623,1.712Z" transform="translate(354 804)" fill="#fff"/>
+  </g>
+</svg>

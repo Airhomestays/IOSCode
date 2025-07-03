@@ -1,0 +1,7 @@
+mutation deleteUser{
+   deleteUser {
+       status
+       errorMessage
+   }
+}
+

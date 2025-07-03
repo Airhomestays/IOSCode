@@ -1,0 +1,46 @@
+query GetProfile {
+userAccount {
+result {
+userId
+profileId
+firstName
+lastName
+displayName
+gender
+dateOfBirth
+iosDOB
+email
+userBanStatus
+phoneNumber
+preferredLanguage
+preferredLanguageName
+preferredCurrency
+appTheme
+location
+info
+createdAt
+picture
+country
+loginUserType
+isAddedList
+verification {
+id
+isEmailConfirmed
+isFacebookConnected
+isGoogleConnected
+isIdVerification
+isPhoneVerified
+}
+userData {
+type
+}
+verificationCode
+countryCode
+loginUserType
+isAddedList
+}
+status
+errorMessage
+}
+}
+

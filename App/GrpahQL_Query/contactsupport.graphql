@@ -1,0 +1,11 @@
+query contactSupport($message: String, $listId: Int, $reservationId: Int, $userType: String) {
+contactSupport(message: $message, listId: $listId, reservationId: $reservationId, userType: $userType) {
+result{
+userId
+email
+firstName
+}
+status
+errorMessage
+}
+}

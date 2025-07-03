@@ -1,0 +1,60 @@
+query SocialLogin(
+$firstName: String,
+$lastName: String,
+$email: String!,
+$dateOfBirth: String,
+$deviceType: String!,
+$deviceDetail: String,
+$deviceId: String!,
+$registerType: String,
+$gender: String,
+$profilePicture: String
+) {
+userSocialLogin (
+firstName: $firstName,
+lastName: $lastName,
+email: $email,
+dateOfBirth: $dateOfBirth,
+deviceType: $deviceType,
+deviceDetail: $deviceDetail,
+deviceId: $deviceId,
+registerType: $registerType,
+gender: $gender,
+profilePicture: $profilePicture
+) {
+result {
+userId
+userToken
+status
+errorMessage
+user {
+firstName
+lastName
+gender
+dateOfBirth
+phoneNumber
+preferredLanguage
+preferredCurrency
+createdAt
+picture
+verification{
+id
+isPhoneVerified
+isEmailConfirmed
+isIdVerification
+isGoogleConnected
+isFacebookConnected
+}
+userData{
+type
+}
+}
+}
+status
+errorMessage
+}
+}
+
+
+
+

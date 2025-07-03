@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="lineto-circular-pro-medium.ttf">
+            <string>Circular-Medium</string>
+        </array>
+        <array key="linetocircular.ttf">
+            <string>Circular-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookingTotalCell" rowHeight="139" id="KGk-i7-Jjw" customClass="BookingTotalCell" customModule="App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="139"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Fe-Yb-Ijk">
+                        <rect key="frame" x="20" y="15" width="315" height="1"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="scq-iA-20b"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IB-Mr-yQp">
+                        <rect key="frame" x="20" y="37" width="325" height="18"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="14"/>
+                        <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Total" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKP-nj-UkT">
+                        <rect key="frame" x="20" y="76" width="41" height="23"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Circular-Medium" family="Circular" pointSize="18"/>
+                        <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3u-7Z-QG6">
+                        <rect key="frame" x="20" y="123" width="315" height="1"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="aan-R1-TyU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$689902" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMY-Rw-OhQ">
+                        <rect key="frame" x="271" y="76" width="73" height="23"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Circular-Medium" family="Circular" pointSize="18"/>
+                        <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="y3u-7Z-QG6" firstAttribute="top" secondItem="QMY-Rw-OhQ" secondAttribute="bottom" constant="24" id="0CI-tO-QE6"/>
+                    <constraint firstItem="oKP-nj-UkT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="2f7-9p-Nh6"/>
+                    <constraint firstItem="QMY-Rw-OhQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oKP-nj-UkT" secondAttribute="trailing" constant="10" id="CsE-WF-WCl"/>
+                    <constraint firstItem="QMY-Rw-OhQ" firstAttribute="centerY" secondItem="oKP-nj-UkT" secondAttribute="centerY" id="FT6-zd-IzM"/>
+                    <constraint firstAttribute="trailing" secondItem="QMY-Rw-OhQ" secondAttribute="trailing" constant="20" id="HfS-LL-3Y0"/>
+                    <constraint firstItem="2Fe-Yb-Ijk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="PSa-e8-8hA"/>
+                    <constraint firstAttribute="bottom" secondItem="y3u-7Z-QG6" secondAttribute="bottom" constant="15" id="PUX-GK-gjW"/>
+                    <constraint firstItem="2Fe-Yb-Ijk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="TPu-gd-7bn"/>
+                    <constraint firstItem="6IB-Mr-yQp" firstAttribute="leading" secondItem="oKP-nj-UkT" secondAttribute="leading" id="ZRv-IN-XDf"/>
+                    <constraint firstItem="6IB-Mr-yQp" firstAttribute="top" secondItem="2Fe-Yb-Ijk" secondAttribute="bottom" constant="21" id="ZrA-8C-oLe"/>
+                    <constraint firstItem="y3u-7Z-QG6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ZtR-zl-d7B"/>
+                    <constraint firstAttribute="trailing" secondItem="2Fe-Yb-Ijk" secondAttribute="trailing" constant="20" id="Ztv-gR-jcf"/>
+                    <constraint firstAttribute="trailing" secondItem="6IB-Mr-yQp" secondAttribute="trailing" constant="10" id="ewB-B2-YSO"/>
+                    <constraint firstItem="oKP-nj-UkT" firstAttribute="top" secondItem="6IB-Mr-yQp" secondAttribute="bottom" constant="21" id="v1z-14-WCo"/>
+                    <constraint firstItem="y3u-7Z-QG6" firstAttribute="top" secondItem="oKP-nj-UkT" secondAttribute="bottom" constant="24" id="zb3-eP-hcy"/>
+                    <constraint firstAttribute="trailing" secondItem="y3u-7Z-QG6" secondAttribute="trailing" constant="20" id="zsZ-C2-I5C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="gstLine" destination="6IB-Mr-yQp" id="NNl-f0-S5c"/>
+                <outlet property="lineView" destination="2Fe-Yb-Ijk" id="lNH-fy-bMo"/>
+                <outlet property="lineView1" destination="y3u-7Z-QG6" id="HWu-wS-Cqi"/>
+                <outlet property="totalPriceLabel" destination="QMY-Rw-OhQ" id="KH3-YX-Xnu"/>
+                <outlet property="totalTitleLabel" destination="oKP-nj-UkT" id="Ox2-ov-B9L"/>
+            </connections>
+            <point key="canvasLocation" x="116.66666666666667" y="130.91517857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.1215686274509804" green="0.12941176470588239" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

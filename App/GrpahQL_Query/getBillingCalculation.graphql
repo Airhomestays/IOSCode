@@ -1,0 +1,34 @@
+#Billing Summary
+query getBillingCalculation($listId: Int!, $startDate: String!, $endDate: String!, $guests: Int!, $convertCurrency: String!) {
+getBillingCalculation(listId: $listId, startDate: $startDate, endDate: $endDate, guests: $guests, convertCurrency: $convertCurrency) {
+result {
+checkIn
+checkOut
+nights
+basePrice
+cleaningPrice
+taxPrice
+guests
+currency
+guestServiceFeePercentage
+hostServiceFeePercentage
+weeklyDiscountPercentage
+monthlyDiscountPercentage
+guestServiceFee
+hostServiceFee
+discountLabel
+discount
+subtotal
+total
+averagePrice
+priceForDays
+specialPricing{
+blockedDates
+isSpecialPrice
+}
+isSpecialPriceAssigned
+}
+status
+errorMessage
+}
+}

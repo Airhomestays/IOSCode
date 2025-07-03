@@ -1,0 +1,18 @@
+{
+  "name": "rentall-ios-app",
+  "version": "3.7",
+  "description": "RentALL iOS application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "app_name",
+    "iOS"
+  ],
+  "author": "organization",
+  "license": "ISC",
+  "dependencies": {
+    "apollo": "1.9"
+  }
+}

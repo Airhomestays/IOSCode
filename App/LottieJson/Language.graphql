@@ -1,0 +1,10 @@
+userquery {
+userLanguages {
+status
+errorMessage
+languages {
+label
+value
+}
+}
+}

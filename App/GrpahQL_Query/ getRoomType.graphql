@@ -1,0 +1,11 @@
+query getRoomTypeSettings {
+    getRoomTypeSettings {
+        results {
+            id
+            typeId
+            itemName
+            isEnable
+            image
+        }
+    }
+}

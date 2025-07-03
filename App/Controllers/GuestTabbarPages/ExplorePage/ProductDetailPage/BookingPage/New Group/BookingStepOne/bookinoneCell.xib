@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="lineto-circular-pro-medium.ttf">
+            <string>Circular-Medium</string>
+        </array>
+        <array key="linetocircular.ttf">
+            <string>Circular-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookinoneCell" rowHeight="327" id="KGk-i7-Jjw" customClass="bookinoneCell" customModule="App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="335"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="335"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1 of 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BpL-MK-28P">
+                        <rect key="frame" x="20" y="25" width="334" height="25"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="k7i-IG-wLp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book your stay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tV4-Bd-18L">
+                        <rect key="frame" x="20" y="58" width="334" height="41"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="Dv7-de-sTK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Medium" family="Circular" pointSize="25"/>
+                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIe-3X-mga">
+                        <rect key="frame" x="120" y="204" width="137" height="35"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="137" id="777-pp-Sre"/>
+                            <constraint firstAttribute="height" constant="35" id="rrB-nu-he7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Medium" family="Circular" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pt-B3-ylk">
+                        <rect key="frame" x="20" y="270" width="334" height="1"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="xBr-ye-31S"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jun 7" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkF-2Z-ioF">
+                        <rect key="frame" x="20" y="187" width="65" height="65"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="65" id="KId-4o-qK9"/>
+                            <constraint firstAttribute="width" constant="65" id="dlL-yc-uPZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3B-jg-czA">
+                        <rect key="frame" x="120" y="125" width="139" height="35"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="BND-z7-vjh"/>
+                            <constraint firstAttribute="width" constant="139" id="xWu-gD-4eA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Medium" family="Circular" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Things to keep in mind" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpM-tO-nkd">
+                        <rect key="frame" x="20" y="285" width="334" height="41"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="PJE-bp-uZb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Medium" family="Circular" pointSize="25"/>
+                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jan  04" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Hq-xa-cXE">
+                        <rect key="frame" x="20" y="107" width="65" height="65"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="65" id="AqQ-hT-Aei"/>
+                            <constraint firstAttribute="width" constant="65" id="oUl-Om-CGD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BpL-MK-28P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="0nr-rA-wK0"/>
+                    <constraint firstAttribute="trailing" secondItem="BpL-MK-28P" secondAttribute="trailing" constant="20" id="1pP-g4-K5A"/>
+                    <constraint firstItem="QkF-2Z-ioF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="AMj-sE-gdH"/>
+                    <constraint firstItem="6pt-B3-ylk" firstAttribute="top" secondItem="QkF-2Z-ioF" secondAttribute="bottom" constant="18" id="CYw-mA-env"/>
+                    <constraint firstItem="V3B-jg-czA" firstAttribute="top" secondItem="tV4-Bd-18L" secondAttribute="bottom" constant="26" id="DAO-S1-3jO"/>
+                    <constraint firstItem="NIe-3X-mga" firstAttribute="top" secondItem="V3B-jg-czA" secondAttribute="bottom" constant="44" id="HHd-Wf-Jy0"/>
+                    <constraint firstItem="tV4-Bd-18L" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="KFV-VZ-cm8"/>
+                    <constraint firstAttribute="trailing" secondItem="EpM-tO-nkd" secondAttribute="trailing" constant="20" id="Me6-XJ-btn"/>
+                    <constraint firstItem="8Hq-xa-cXE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Mwp-au-8t2"/>
+                    <constraint firstItem="QkF-2Z-ioF" firstAttribute="top" secondItem="8Hq-xa-cXE" secondAttribute="bottom" constant="15" id="N6E-yh-N4o"/>
+                    <constraint firstItem="NIe-3X-mga" firstAttribute="leading" secondItem="QkF-2Z-ioF" secondAttribute="trailing" constant="35" id="NFE-bM-vqQ"/>
+                    <constraint firstItem="EpM-tO-nkd" firstAttribute="top" secondItem="6pt-B3-ylk" secondAttribute="bottom" constant="14" id="NYa-T0-k3V"/>
+                    <constraint firstItem="6pt-B3-ylk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Rgi-41-SFl"/>
+                    <constraint firstItem="BpL-MK-28P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="WB7-Ve-Szr"/>
+                    <constraint firstItem="tV4-Bd-18L" firstAttribute="top" secondItem="BpL-MK-28P" secondAttribute="bottom" constant="8" id="WLu-g8-uSc"/>
+                    <constraint firstAttribute="trailing" secondItem="tV4-Bd-18L" secondAttribute="trailing" constant="20" id="cFX-hX-EwM"/>
+                    <constraint firstItem="EpM-tO-nkd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="eZq-lP-s77"/>
+                    <constraint firstItem="8Hq-xa-cXE" firstAttribute="top" secondItem="tV4-Bd-18L" secondAttribute="bottom" constant="8" id="ftY-aj-2VG"/>
+                    <constraint firstAttribute="trailing" secondItem="6pt-B3-ylk" secondAttribute="trailing" constant="20" id="noD-7I-4Ej"/>
+                    <constraint firstItem="V3B-jg-czA" firstAttribute="leading" secondItem="8Hq-xa-cXE" secondAttribute="trailing" constant="35" id="q5c-is-AiJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bookstayLabel" destination="tV4-Bd-18L" id="g03-KH-UP4"/>
+                <outlet property="checkLabel" destination="V3B-jg-czA" id="d4i-GK-Kxg"/>
+                <outlet property="checkinLabel" destination="8Hq-xa-cXE" id="pOo-Ve-64I"/>
+                <outlet property="checkoutLabel" destination="QkF-2Z-ioF" id="6Tm-Xj-T09"/>
+                <outlet property="outLabel" destination="NIe-3X-mga" id="vvg-fU-cis"/>
+                <outlet property="stepLabel" destination="BpL-MK-28P" id="EAc-Z5-oZS"/>
+                <outlet property="thingsLabel" destination="EpM-tO-nkd" id="fOM-ol-0jG"/>
+            </connections>
+            <point key="canvasLocation" x="62.318840579710148" y="129.57589285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

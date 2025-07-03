@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="linetocircular.ttf">
+            <string>Circular-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShareListCell" rowHeight="65" id="KGk-i7-Jjw" customClass="ShareListCell" customModule="App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="362" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="WF3-sP-S9d">
+                        <rect key="frame" x="15" y="28.5" width="23" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="23" id="7Z6-pQ-ANf"/>
+                            <constraint firstAttribute="height" constant="23" id="Ne5-YW-UIQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spr-HW-RPO">
+                        <rect key="frame" x="15" y="78" width="332" height="1"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="AnZ-ns-mJW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntf-zY-VpG">
+                        <rect key="frame" x="48" y="17.5" width="294" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="s1d-06-Any"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="18"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Ntf-zY-VpG" secondAttribute="trailing" constant="20" id="BWc-GD-UNi"/>
+                    <constraint firstItem="Ntf-zY-VpG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17.5" id="C1Q-qM-q11"/>
+                    <constraint firstItem="WF3-sP-S9d" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="C61-iM-Phk"/>
+                    <constraint firstAttribute="bottom" secondItem="Spr-HW-RPO" secondAttribute="bottom" constant="1" id="LLJ-EN-3PG"/>
+                    <constraint firstItem="Ntf-zY-VpG" firstAttribute="centerY" secondItem="WF3-sP-S9d" secondAttribute="centerY" id="N7i-KM-Thz"/>
+                    <constraint firstAttribute="bottom" secondItem="Ntf-zY-VpG" secondAttribute="bottom" constant="17.5" id="VqE-yp-1FQ"/>
+                    <constraint firstItem="Ntf-zY-VpG" firstAttribute="leading" secondItem="WF3-sP-S9d" secondAttribute="trailing" constant="10" id="Xue-g3-xnv"/>
+                    <constraint firstItem="WF3-sP-S9d" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="jHs-98-FIN"/>
+                    <constraint firstAttribute="trailing" secondItem="Spr-HW-RPO" secondAttribute="trailing" constant="15" id="p3N-pk-gEA"/>
+                    <constraint firstItem="Spr-HW-RPO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="rg3-Kc-0FJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lineView" destination="Spr-HW-RPO" id="86t-1Q-myv"/>
+                <outlet property="shareImg" destination="WF3-sP-S9d" id="3OJ-NO-0bZ"/>
+                <outlet property="shareTitle" destination="Ntf-zY-VpG" id="K2k-y4-WSX"/>
+            </connections>
+            <point key="canvasLocation" x="162.31884057971016" y="137.61160714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat" width="50" height="50"/>
+    </resources>
+</document>

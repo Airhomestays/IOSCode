@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="lineto-circular-pro-medium.ttf">
+            <string>Circular-Medium</string>
+        </array>
+        <array key="linetocircular.ttf">
+            <string>Circular-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedbackFooterCell" rowHeight="56" id="KGk-i7-Jjw" customClass="FeedbackFooterCell" customModule="App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What would you like to do?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="atH-mj-kC8">
+                        <rect key="frame" x="20" y="5" width="316" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="C9T-gA-lQh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Medium" family="Circular" pointSize="21"/>
+                        <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTu-8g-2V5">
+                        <rect key="frame" x="20" y="65" width="316" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="t9L-e1-5g0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="20"/>
+                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="Give product feedback">
+                            <color key="titleColor" systemColor="viewFlipsideBackgroundColor"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpp-fX-wBZ">
+                        <rect key="frame" x="20" y="130" width="316" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Cxz-kB-o0I"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="20"/>
+                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="Report a bug">
+                            <color key="titleColor" systemColor="viewFlipsideBackgroundColor"/>
+                        </state>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fedback" translatesAutoresizingMaskIntoConstraints="NO" id="9Mm-qx-7Fr">
+                        <rect key="frame" x="286" y="75" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="bOc-Ii-hit"/>
+                            <constraint firstAttribute="width" constant="30" id="qZo-XU-RMd"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bug" translatesAutoresizingMaskIntoConstraints="NO" id="KVR-Nd-Lg9">
+                        <rect key="frame" x="286" y="140" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="0ih-HL-OIm"/>
+                            <constraint firstAttribute="width" constant="30" id="oRi-3S-08H"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aTu-8g-2V5" firstAttribute="top" secondItem="atH-mj-kC8" secondAttribute="bottom" constant="20" id="3Bk-XA-T9f"/>
+                    <constraint firstAttribute="trailing" secondItem="9Mm-qx-7Fr" secondAttribute="trailing" constant="40" id="3Fd-m3-1GH"/>
+                    <constraint firstItem="wpp-fX-wBZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="3ML-yz-Ss2"/>
+                    <constraint firstItem="atH-mj-kC8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="4iu-QW-ZHy"/>
+                    <constraint firstAttribute="trailing" secondItem="KVR-Nd-Lg9" secondAttribute="trailing" constant="40" id="Dka-Hh-7tM"/>
+                    <constraint firstAttribute="trailing" secondItem="wpp-fX-wBZ" secondAttribute="trailing" constant="20" id="EBY-cJ-pN9"/>
+                    <constraint firstAttribute="trailing" secondItem="aTu-8g-2V5" secondAttribute="trailing" constant="20" id="EBa-UE-sPP"/>
+                    <constraint firstItem="9Mm-qx-7Fr" firstAttribute="centerY" secondItem="aTu-8g-2V5" secondAttribute="centerY" id="M9W-4x-AHx"/>
+                    <constraint firstItem="atH-mj-kC8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="T7h-Jz-6AJ"/>
+                    <constraint firstAttribute="trailing" secondItem="atH-mj-kC8" secondAttribute="trailing" constant="20" id="aUJ-rL-7rh"/>
+                    <constraint firstItem="KVR-Nd-Lg9" firstAttribute="centerY" secondItem="wpp-fX-wBZ" secondAttribute="centerY" id="g7v-V2-5uf"/>
+                    <constraint firstAttribute="bottom" secondItem="wpp-fX-wBZ" secondAttribute="bottom" constant="20" id="laD-bh-Dny"/>
+                    <constraint firstItem="wpp-fX-wBZ" firstAttribute="top" secondItem="aTu-8g-2V5" secondAttribute="bottom" constant="15" id="td0-tf-iuo"/>
+                    <constraint firstItem="aTu-8g-2V5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="zOG-OJ-X0U"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="bugBtn" destination="wpp-fX-wBZ" id="P6W-W3-W5N"/>
+                <outlet property="bugImgView" destination="KVR-Nd-Lg9" id="New-H2-hll"/>
+                <outlet property="feedbcakcBtn" destination="aTu-8g-2V5" id="Ug1-6N-RO3"/>
+                <outlet property="feedbckImgView" destination="9Mm-qx-7Fr" id="aXi-Q4-NGa"/>
+                <outlet property="titleLabel" destination="atH-mj-kC8" id="7i8-fl-XMq"/>
+            </connections>
+            <point key="canvasLocation" x="163.768115942029" y="100.44642857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bug" width="30" height="30"/>
+        <image name="fedback" width="30" height="30"/>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.1215686274509804" green="0.12941176470588239" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

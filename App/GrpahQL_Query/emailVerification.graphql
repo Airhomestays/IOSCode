@@ -1,0 +1,13 @@
+mutation EmailVerification(
+$token: String!,
+$email: String!,
+){
+EmailVerification(
+token: $token,
+email: $email
+) {
+status
+errorMessage
+}
+}
+

@@ -1,0 +1,101 @@
+
+mutation Signup(
+$firstName: String,
+$lastName: String,
+$email: String!,
+$password: String!,
+$dateOfBirth: String,
+$deviceType: String!,
+$deviceDetail: String,
+$deviceId: String!,
+$registerType: String
+) {
+createUser (
+firstName: $firstName,
+lastName: $lastName,
+email: $email,
+password: $password,
+dateOfBirth: $dateOfBirth,
+deviceType: $deviceType,
+deviceDetail: $deviceDetail,
+deviceId: $deviceId,
+registerType: $registerType) {
+result {
+userId
+userToken
+user {
+firstName
+lastName
+gender
+dateOfBirth
+phoneNumber
+preferredLanguage
+preferredCurrency
+createdAt
+picture
+verification{
+id
+isPhoneVerified
+isEmailConfirmed
+isIdVerification
+isGoogleConnected
+isFacebookConnected
+}
+userData {
+type
+}
+}
+}
+status
+errorMessage
+}
+}
+
+#logout
+
+mutation Logout(
+$deviceType: String!,
+$deviceId: String!) {
+userLogout (
+deviceType: $deviceType,
+deviceId: $deviceId,
+) {
+status
+errorMessage
+}
+}
+
+
+
+mutation SocialLoginVerify(
+$verificationType: String!,
+$actionType: String!) {
+SocialVerification(
+verificationType: $verificationType,
+actionType: $actionType ) {
+status
+errorMessage
+}
+}
+query ResendConfirmEmail{
+ResendConfirmEmail {
+results{
+id
+userId
+profile {
+firstName
+userData {
+email
+}
+}
+token
+email
+status
+}
+status
+errorMessage
+
+}
+}
+
+

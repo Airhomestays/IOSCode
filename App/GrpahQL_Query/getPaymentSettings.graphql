@@ -1,0 +1,10 @@
+query getPaymentSettings{
+  getPaymentSettings{
+    status
+    errorMessage
+    result {
+      secretKey
+      publishableKey
+    }
+  }
+}

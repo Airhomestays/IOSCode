@@ -1,0 +1,13 @@
+query getImageBanner{
+    getImageBanner {
+        result {
+            id
+            title
+            description
+            buttonLabel
+            image
+        }
+        status
+        errorMessage
+    }
+}

@@ -1,0 +1,29 @@
+query getPendingUserReview($reservationId: Int!) {
+  getPendingUserReview(reservationId: $reservationId) {
+    status
+    errorMessage
+    result {
+      id
+      listId
+      guestId
+      hostId
+      listData {
+        id
+        title
+        city
+        state
+        country
+        roomType
+        reviewsCount
+        reviewsStarRating
+        coverPhoto
+        listPhotoName
+        listPhotos {
+          id
+          name
+        }
+      }
+    }
+  }
+}
+

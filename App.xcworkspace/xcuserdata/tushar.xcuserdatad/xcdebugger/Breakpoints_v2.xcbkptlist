@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AA6FCB0E-28C3-4EEC-B61F-2946E7404668"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C6DC25C-3460-44F2-A162-F4D40CBF2033"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "App/Controllers/GuestTabbarPages/InboxPage/InboxListingVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2571"
+            endingLineNumber = "2571"
+            landmarkName = "getOverAllStr()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "15A4C69B-15F6-4AA3-AF01-AFED909884B3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "App/Controllers/GuestTabbarPages/InboxPage/InboxListingVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "801"
+            endingLineNumber = "801"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47B76C55-7670-4932-93A9-4182BB44BD62"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "App/Controllers/GuestTabbarPages/InboxPage/InboxListingVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "936"
+            endingLineNumber = "936"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B9354B87-5A10-4DC3-915A-D195593EBAE2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "App/Controllers/GuestTabbarPages/InboxPage/InboxListingVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2908"
+            endingLineNumber = "2908"
+            landmarkName = "Approve_btn_tapped()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B9354B87-5A10-4DC3-915A-D195593EBAE2 - 64b74e1975c97a85"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "App.InboxListingVC.Approve_btn_tapped() -&gt; ()"
+                  moduleName = "App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tushar/Downloads/Airhomestays%202/radicalstart_team-yogesh-khurana-rentall-advancedpro-ios-v3.7-3fbf09047b83%202/App/Controllers/GuestTabbarPages/InboxPage/InboxListingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "2908"
+                  endingLineNumber = "2908"
+                  offsetFromSymbolStart = "6488">
+               </Location>
+               <Location
+                  uuid = "B9354B87-5A10-4DC3-915A-D195593EBAE2 - 7b8f83a0e0ce5d1b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;Apollo.GraphQLResult&lt;App.ReservationStatusMutationn.Data&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in App.InboxListingVC.Approve_btn_tapped() -&gt; ()"
+                  moduleName = "App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tushar/Downloads/Airhomestays%202/radicalstart_team-yogesh-khurana-rentall-advancedpro-ios-v3.7-3fbf09047b83%202/App/Controllers/GuestTabbarPages/InboxPage/InboxListingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "2909"
+                  endingLineNumber = "2909"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "77D39F36-B0A2-49E3-A5CE-CD335B521B95"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "App/Controllers/GuestTabbarPages/InboxPage/InboxListingVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2792"
+            endingLineNumber = "2792"
+            landmarkName = "decline_btn_tapped()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "77D39F36-B0A2-49E3-A5CE-CD335B521B95 - a6cf09a43181f1e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "App.InboxListingVC.decline_btn_tapped() -&gt; ()"
+                  moduleName = "App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tushar/Downloads/Airhomestays%202/radicalstart_team-yogesh-khurana-rentall-advancedpro-ios-v3.7-3fbf09047b83%202/App/Controllers/GuestTabbarPages/InboxPage/InboxListingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "2792"
+                  endingLineNumber = "2792"
+                  offsetFromSymbolStart = "6440">
+               </Location>
+               <Location
+                  uuid = "77D39F36-B0A2-49E3-A5CE-CD335B521B95 - bbcbc0b9ac6dde18"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;Apollo.GraphQLResult&lt;App.ReservationStatusMutationn.Data&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in App.InboxListingVC.decline_btn_tapped() -&gt; ()"
+                  moduleName = "App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tushar/Downloads/Airhomestays%202/radicalstart_team-yogesh-khurana-rentall-advancedpro-ios-v3.7-3fbf09047b83%202/App/Controllers/GuestTabbarPages/InboxPage/InboxListingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "2793"
+                  endingLineNumber = "2793"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "528802CD-BAAC-48D5-9B87-78F8479AA730"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "App/Controllers/GuestTabbarPages/InboxPage/InboxListingVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "61E0D972-16A1-4002-B055-0A59A8DF69E0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "App/Controllers/GuestTabbarPages/ExplorePage/ProductDetailPage/BookingPage/New Group/PaymentSelectionPage/PaymentSelectionPage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "544"
+            endingLineNumber = "544"
+            landmarkName = "createRes()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

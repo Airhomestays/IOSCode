@@ -1,0 +1,25 @@
+query userLanguage {
+userLanguages {
+status
+errorMessage
+result {
+label
+value
+}
+}
+}
+
+
+query getCurrenciesList {
+getCurrencies {
+results {
+id
+symbol
+isEnable
+isPayment
+isBaseCurrency
+}
+status
+errorMessage
+}
+}

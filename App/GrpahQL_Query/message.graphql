@@ -1,0 +1,136 @@
+query getAllThreads($threadType: String, $threadId: Int, $currentPage: Int) {
+getAllThreads(threadType: $threadType, threadId: $threadId, currentPage: $currentPage) {
+results {
+id
+listId
+guest
+host
+listData {
+city
+state
+country
+}
+threadItem {
+id
+threadId
+content
+sentBy
+isRead
+type
+startDate
+endDate
+createdAt
+}
+guestProfile {
+profileId
+displayName
+firstName
+picture
+}
+hostProfile {
+profileId
+displayName
+firstName
+picture
+}
+}
+count
+status
+errorMessage
+}
+}
+
+
+
+# Message
+query getThreads($threadType: String, $threadId: Int, $currentPage: Int,$sortOrder: Boolean) {
+getThreads(threadType: $threadType, threadId: $threadId, currentPage: $currentPage,sortOrder:$sortOrder) {
+status
+errorMessage
+results {
+getThreadCount
+threadItems {
+id
+threadId
+reservationId
+content
+sentBy
+type
+startDate
+endDate
+createdAt
+personCapacity
+}
+guestProfile {
+userId
+profileId
+displayName
+firstName
+picture
+location
+}
+hostProfile {
+userId
+profileId
+displayName
+firstName
+picture
+location
+}
+threadItemForType
+{
+id
+threadId
+reservationId
+content
+sentBy
+type
+startDate
+endDate
+createdAt
+personCapacity
+}
+}
+}
+}
+
+
+#sendMessage
+mutation sendMessage($threadId: Int!, $content: String, $type: String) {
+sendMessage(threadId: $threadId, content: $content, type: $type) {
+results{
+id
+sentBy
+content
+type
+reservationId
+startDate
+endDate
+createdAt
+}
+status
+errorMessage
+
+}
+}
+
+#readMessage
+mutation readMessage($threadId: Int!) {
+readMessage(threadId: $threadId) {
+status
+message
+errorMessage
+}
+}
+
+# NewMessage
+query getUnReadThreadCount($threadId: Int){
+getUnReadThreadCount (threadId: $threadId){
+results {
+isUnReadMessage
+messageCount
+}
+status
+errorMessage
+}
+}

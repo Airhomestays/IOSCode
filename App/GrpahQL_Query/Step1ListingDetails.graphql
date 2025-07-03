@@ -1,0 +1,110 @@
+query getStep1ListingDetails($listId:String!, $preview: Boolean) {
+getListingDetails (listId:$listId, preview: $preview) {
+status
+errorMessage
+results{
+id
+userId
+country
+street
+buildingName
+city
+state
+zipcode
+lat
+lng
+isMapTouched
+bedrooms
+residenceType
+beds
+personCapacity
+bathrooms
+user {
+email
+userBanStatus
+profile{
+firstName
+lastName
+dateOfBirth
+}
+}
+userAmenities {
+id
+image
+itemName
+}
+userSafetyAmenities {
+id
+image
+itemName
+}
+userSpaces {
+id
+itemName
+}
+settingsData {
+id
+settingsId
+listsettings {
+id
+itemName
+settingsType {
+typeName
+}
+}
+}
+userBedsTypes{
+id
+listId
+bedCount
+bedType
+}
+}
+
+}
+}
+
+
+
+
+query GetListingDetailsStep3($listId:String!, $preview: Boolean) {
+getListingDetails (listId:$listId, preview: $preview) {
+results{
+id
+userId
+bookingType
+isPublished
+houseRules {
+id
+}
+listingData {
+bookingNoticeTime,
+checkInStart,
+checkInEnd,
+maxDaysNotice,
+minNight,
+maxNight,
+basePrice,
+cleaningPrice,
+tax,
+currency,
+weeklyDiscount,
+monthlyDiscount,
+cancellationPolicy
+}
+blockedDates {
+blockedDates
+reservationId
+}
+calendars {
+id
+name
+url
+listId
+status
+}
+}
+status
+errorMessage
+}
+}

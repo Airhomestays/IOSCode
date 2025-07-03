@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="lineto-circular-pro-medium.ttf">
+            <string>Circular-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CancellationCell" rowHeight="346" id="KGk-i7-Jjw" customClass="CancellationCell" customModule="App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="352"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="352"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancellation Policy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6j-1u-tcc">
+                        <rect key="frame" x="24" y="5" width="316" height="33"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Circular-Medium" family="Circular" pointSize="26"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="752" text="Cancellation policy is 'strict' and you can cancel upto 7 days prior to arrival and get a 50% refund" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C60-Tk-Nc3">
+                        <rect key="frame" x="24" y="60" width="316" height="61"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.40784313725490196" green="0.40784313725490196" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Example" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VT-UH-m3i">
+                        <rect key="frame" x="24" y="140" width="316" height="20.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" verticalCompressionResistancePriority="753" text="Cancellation policy is 'strict' and you can cancel upto 7 days prior to arrival and get a 50% refund" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qj4-x1-KV7">
+                        <rect key="frame" x="24" y="182" width="316" height="61"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.40784313729999999" green="0.40784313729999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyy-Jb-LHg">
+                        <rect key="frame" x="20" y="340" width="324" height="1"/>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="aTU-cK-GvN"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="tiB-qT-ONM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For ex: Say a guest booked a stay and their check-in time is 3:00 PM on June 09th. " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3R-me-gi5">
+                        <rect key="frame" x="24" y="261" width="316" height="61"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="C60-Tk-Nc3" firstAttribute="top" secondItem="X6j-1u-tcc" secondAttribute="bottom" constant="22" id="1NQ-Ln-cM3"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="kyy-Jb-LHg" secondAttribute="bottom" id="7Cg-6G-ewe"/>
+                    <constraint firstItem="Qj4-x1-KV7" firstAttribute="top" secondItem="7VT-UH-m3i" secondAttribute="bottom" constant="21.5" id="A2V-Y8-Pus"/>
+                    <constraint firstItem="7VT-UH-m3i" firstAttribute="trailing" secondItem="C60-Tk-Nc3" secondAttribute="trailing" id="DeK-I5-dhf"/>
+                    <constraint firstItem="kyy-Jb-LHg" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="EiG-YY-bQt"/>
+                    <constraint firstItem="C60-Tk-Nc3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="HyS-yZ-FZD"/>
+                    <constraint firstItem="kyy-Jb-LHg" firstAttribute="top" secondItem="H3R-me-gi5" secondAttribute="bottom" constant="18" id="IZh-VX-LnL"/>
+                    <constraint firstAttribute="trailing" secondItem="C60-Tk-Nc3" secondAttribute="trailing" constant="24" id="J4R-lZ-Q5C"/>
+                    <constraint firstItem="H3R-me-gi5" firstAttribute="top" secondItem="Qj4-x1-KV7" secondAttribute="bottom" constant="18" id="Kdi-qO-rnr"/>
+                    <constraint firstItem="7VT-UH-m3i" firstAttribute="top" secondItem="C60-Tk-Nc3" secondAttribute="bottom" constant="19" id="Rs5-2M-9Kl"/>
+                    <constraint firstItem="Qj4-x1-KV7" firstAttribute="trailing" secondItem="C60-Tk-Nc3" secondAttribute="trailing" id="Vjo-Cf-tRg"/>
+                    <constraint firstItem="X6j-1u-tcc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="jey-5f-3eD"/>
+                    <constraint firstItem="X6j-1u-tcc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="jiR-u3-5ap"/>
+                    <constraint firstItem="7VT-UH-m3i" firstAttribute="leading" secondItem="C60-Tk-Nc3" secondAttribute="leading" id="oQr-PO-RMw"/>
+                    <constraint firstItem="kyy-Jb-LHg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="pAJ-JA-9EC"/>
+                    <constraint firstItem="Qj4-x1-KV7" firstAttribute="leading" secondItem="C60-Tk-Nc3" secondAttribute="leading" id="sH3-jm-FQS"/>
+                    <constraint firstItem="H3R-me-gi5" firstAttribute="trailing" secondItem="Qj4-x1-KV7" secondAttribute="trailing" id="uYv-qh-buS"/>
+                    <constraint firstItem="H3R-me-gi5" firstAttribute="leading" secondItem="Qj4-x1-KV7" secondAttribute="leading" id="vJN-80-IRT"/>
+                    <constraint firstAttribute="trailing" secondItem="X6j-1u-tcc" secondAttribute="trailing" constant="24" id="w8G-Oj-oTg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="cancelTitleLabel" destination="X6j-1u-tcc" id="wOl-nF-Tnm"/>
+                <outlet property="lblCancellationPolicy" destination="C60-Tk-Nc3" id="N3n-WW-4Je"/>
+                <outlet property="lblExample" destination="7VT-UH-m3i" id="txS-DL-rPs"/>
+                <outlet property="lblExampleDescription" destination="Qj4-x1-KV7" id="VQ7-KC-01M"/>
+                <outlet property="lblExampleDescription1" destination="H3R-me-gi5" id="Pfi-1B-il3"/>
+                <outlet property="lineView" destination="kyy-Jb-LHg" id="Y6Q-E3-IjG"/>
+            </connections>
+            <point key="canvasLocation" x="71.014492753623188" y="96.428571428571431"/>
+        </tableViewCell>
+    </objects>
+</document>

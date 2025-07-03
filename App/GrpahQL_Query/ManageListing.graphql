@@ -1,0 +1,185 @@
+query ManageListings{
+ManageListings {
+results {
+id
+title
+city
+updatedAt
+coverPhoto
+isPublished
+isReady
+listApprovalStatus
+
+listPhotoName
+listPhotos{
+id
+name
+}
+listingData {
+basePrice
+currency
+}
+settingsData {
+listsettings {
+id
+itemName
+}
+}
+listingSteps {
+id
+step1
+step2
+step3
+}
+user{
+userBanStatus
+}
+}
+status
+errorMessage
+}
+}
+
+
+mutation managePublishStatus($listId: Int!, $action: String!) {
+managePublishStatus(listId: $listId, action: $action) {
+status
+errorMessage
+}
+}
+
+
+
+#Become a Host
+
+query ShowListingSteps($listId:String!) {
+showListingSteps (listId:$listId) {
+results{
+id
+listId
+step1
+step2
+step3
+listing {
+id
+isReady
+listApprovalStatus
+isPublished
+user {
+userBanStatus
+}
+}
+isPhotosAdded
+}
+status
+errorMessage
+}
+}
+
+#showlistingphotos
+
+
+query ShowListPhotos($listId: Int!) {
+showListPhotos(listId: $listId) {
+results{
+id,
+listId,
+name,
+type,
+isCover,
+photosCount,
+}
+status
+errorMessage
+}
+}
+
+
+mutation UpdateListingStep2 (
+$id: Int,
+$description:String,
+$title:String,
+$coverPhoto: Int
+) {
+updateListingStep2 (
+id: $id,
+description:$description,
+title:$title,
+coverPhoto: $coverPhoto
+) {
+status
+results {
+id
+title
+description
+coverPhoto
+}
+errorMessage
+}
+}
+
+
+query getListingDetailsStep2($listId:String!, $preview: Boolean) {
+getListingDetails (listId:$listId, preview: $preview) {
+results{
+id
+userId
+title
+description
+coverPhoto
+}
+status
+errorMessage
+}
+} 
+
+
+mutation RemoveListPhotos(
+$listId: Int!,
+$name: String,
+) {
+RemoveListPhotos (
+listId: $listId,
+name: $name) {
+status
+errorMessage
+}
+}
+
+
+mutation manageListingSteps($listId:String!, $currentStep: Int!) {
+ManageListingSteps (listId:$listId, currentStep: $currentStep) {
+results{
+id
+listId
+step1
+step2
+step3
+listing {
+id
+isReady
+listApprovalStatus
+isPublished
+user {
+userBanStatus
+}
+}
+}
+status
+errorMessage
+}
+}
+
+
+#Delete Listing
+
+mutation RemoveListing($listId:Int!) {
+RemoveListing (listId:$listId) {
+results{
+id
+name
+}
+status
+errorMessage
+}
+}

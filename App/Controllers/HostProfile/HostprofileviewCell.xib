@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="lineto-circular-pro-medium.ttf">
+            <string>Circular-Medium</string>
+        </array>
+        <array key="linetocircular.ttf">
+            <string>Circular-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HostprofileviewCell" id="KGk-i7-Jjw" userLabel="HostprofileviewCell" customClass="HostprofileviewCell" customModule="Rent_All" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="124.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, I'm Pradeepa" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEo-cZ-tzP">
+                        <rect key="frame" x="20" y="15.5" width="245" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="49" id="VRS-to-yau"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Medium" family="Circular" pointSize="30"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Member since November 2019" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfZ-Pl-wkZ">
+                        <rect key="frame" x="20" y="65.5" width="255" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="2f7-kp-Afx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="18"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwx-9K-xZl">
+                        <rect key="frame" x="20" y="119" width="335" height="0.0"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" id="oU5-Hb-H2L"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unknown" translatesAutoresizingMaskIntoConstraints="NO" id="9cn-3o-X9I">
+                        <rect key="frame" x="285" y="33" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="2BI-Ue-m95"/>
+                            <constraint firstAttribute="height" constant="70" id="x7B-AW-u6c"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9cn-3o-X9I" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="32.5" id="3xc-fv-t5U"/>
+                    <constraint firstItem="kwx-9K-xZl" firstAttribute="top" secondItem="GfZ-Pl-wkZ" secondAttribute="bottom" constant="12.5" id="6NV-J3-TYj"/>
+                    <constraint firstItem="GfZ-Pl-wkZ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="pEo-cZ-tzP" secondAttribute="bottom" constant="1" id="JTV-Ac-6Qa"/>
+                    <constraint firstItem="GfZ-Pl-wkZ" firstAttribute="top" secondItem="pEo-cZ-tzP" secondAttribute="bottom" constant="1" id="S3h-TH-3to"/>
+                    <constraint firstItem="9cn-3o-X9I" firstAttribute="leading" secondItem="pEo-cZ-tzP" secondAttribute="trailing" constant="20" id="VpH-yd-2hm"/>
+                    <constraint firstItem="9cn-3o-X9I" firstAttribute="leading" secondItem="GfZ-Pl-wkZ" secondAttribute="trailing" constant="10" id="WST-B7-zw7"/>
+                    <constraint firstAttribute="trailing" secondItem="9cn-3o-X9I" secondAttribute="trailing" constant="20" id="Wag-fv-2rd"/>
+                    <constraint firstItem="pEo-cZ-tzP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="e1b-fe-HAM"/>
+                    <constraint firstAttribute="trailing" secondItem="kwx-9K-xZl" secondAttribute="trailing" constant="20" id="ejX-CI-A0Z"/>
+                    <constraint firstItem="GfZ-Pl-wkZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ge8-uq-GTd"/>
+                    <constraint firstItem="9cn-3o-X9I" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oLI-Ld-XRW"/>
+                    <constraint firstItem="pEo-cZ-tzP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ys0-WN-n86"/>
+                    <constraint firstItem="kwx-9K-xZl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="zPe-um-jVt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="memberLabel" destination="GfZ-Pl-wkZ" id="Ctv-ys-RvO"/>
+                <outlet property="nameLabel" destination="pEo-cZ-tzP" id="tdE-LK-Lur"/>
+                <outlet property="profileImage" destination="9cn-3o-X9I" id="MOg-ia-4eb"/>
+            </connections>
+            <point key="canvasLocation" x="36.956521739130437" y="34.821428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="unknown" width="600" height="600"/>
+    </resources>
+</document>

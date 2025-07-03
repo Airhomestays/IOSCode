@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="linetocircular.ttf">
+            <string>Circular-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReportuserSelectionCell" id="KGk-i7-Jjw" customClass="ReportuserSelectionCell" customModule="App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="price_unclick" translatesAutoresizingMaskIntoConstraints="NO" id="9iJ-pd-EyC">
+                        <rect key="frame" x="20" y="25" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="PGv-Oe-1nV"/>
+                            <constraint firstAttribute="height" constant="25" id="WLo-UC-jSh"/>
+                        </constraints>
+                    </imageView>
+                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="00v-57-hTN">
+                        <rect key="frame" x="20" y="79" width="335" height="1"/>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="zzE-Mj-PVw"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Profile should not be on RentALL." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBg-hd-Znv">
+                        <rect key="frame" x="53" y="7" width="312" height="61"/>
+                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="18"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wBg-hd-Znv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-2.5" id="Qkq-hx-3yV"/>
+                    <constraint firstAttribute="trailing" secondItem="00v-57-hTN" secondAttribute="trailing" constant="20" id="X7w-yW-fts"/>
+                    <constraint firstAttribute="bottom" secondItem="00v-57-hTN" secondAttribute="bottom" id="a9m-4S-8WM"/>
+                    <constraint firstItem="wBg-hd-Znv" firstAttribute="leading" secondItem="9iJ-pd-EyC" secondAttribute="trailing" constant="8" id="arV-j1-UoA"/>
+                    <constraint firstAttribute="trailing" secondItem="wBg-hd-Znv" secondAttribute="trailing" constant="10" id="bpc-yb-1bj"/>
+                    <constraint firstAttribute="bottom" secondItem="wBg-hd-Znv" secondAttribute="bottom" constant="12" id="fNr-J1-QDu"/>
+                    <constraint firstItem="9iJ-pd-EyC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="fWM-gs-dni"/>
+                    <constraint firstItem="9iJ-pd-EyC" firstAttribute="centerY" secondItem="wBg-hd-Znv" secondAttribute="centerY" id="iXE-Dh-Bk4"/>
+                    <constraint firstItem="00v-57-hTN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="jOF-Pu-pcs"/>
+                    <constraint firstItem="wBg-hd-Znv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="pnr-VQ-afa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lineview" destination="00v-57-hTN" id="1Zu-dg-ulf"/>
+                <outlet property="reportuserLabel" destination="wBg-hd-Znv" id="mMC-OW-oVV"/>
+                <outlet property="selectionImg" destination="9iJ-pd-EyC" id="CYD-xk-Ep3"/>
+            </connections>
+            <point key="canvasLocation" x="35.507246376811594" y="34.821428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="price_unclick" width="25" height="25"/>
+    </resources>
+</document>

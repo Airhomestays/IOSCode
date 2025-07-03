@@ -1,0 +1,33 @@
+query getUserReviews($currentPage: Int, $ownerType: String) {
+  getUserReviews(currentPage: $currentPage, ownerType: $ownerType) {
+    status
+    errorMessage
+    count
+    ownerType
+    currentPage
+    results {
+      id
+      reservationId
+      listId
+      listData{
+      id
+      title
+}
+    
+      authorId
+      userId
+      reviewContent
+      rating
+      createdAt
+      isAdmin
+      authorData {
+        ...profileFields
+      }
+      userData {
+        ...profileFields
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="lineto-circular-bold.ttf">
+            <string>Circular-Bold</string>
+        </array>
+        <array key="linetocircular.ttf">
+            <string>Circular-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeaderDetailCell" rowHeight="216" id="KGk-i7-Jjw" customClass="HeaderDetailCell" customModule="App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="215"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="215"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTIRE PLACE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imP-kt-gZ5">
+                        <rect key="frame" x="15" y="5" width="345" height="25"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="bjI-9i-1Si"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Bold" family="Circular" pointSize="17"/>
+                        <color key="textColor" red="0.64705882349999999" green="0.16078431369999999" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charming Sea-View Studio on Rawai Beach" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVV-Z0-60B">
+                        <rect key="frame" x="15" y="28" width="345" height="86"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Circular-Bold" family="Circular" pointSize="28"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cook CountryILUS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYV-KC-2pt">
+                        <rect key="frame" x="15" y="122" width="255" height="25"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="sdB-C4-YI1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="15"/>
+                        <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hosted by Robert Alvarez Hosted by Robert Alvarez" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFb-Iv-nn7">
+                        <rect key="frame" x="15" y="155" width="259" height="39"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="39" id="nJy-Tg-5kH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="15"/>
+                        <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tTN-bB-bzI">
+                        <rect key="frame" x="280" y="115" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="OfY-sP-WKX"/>
+                            <constraint firstAttribute="width" constant="80" id="uhI-Aj-blf"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IM8-ky-nph">
+                        <rect key="frame" x="280" y="115" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="SST-CL-igo"/>
+                            <constraint firstAttribute="width" constant="80" id="sdf-3q-jGh"/>
+                        </constraints>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZt-hH-eqa">
+                        <rect key="frame" x="0.0" y="0.0" width="462" height="54"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zn-br-eNL">
+                                <rect key="frame" x="355" y="15" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="share"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mS-C5-MYz">
+                                <rect key="frame" x="416" y="15" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Heart"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDN-vg-bPl">
+                                <rect key="frame" x="18" y="15" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="back_white"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2mS-C5-MYz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oVV-Z0-60B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="1IM-Tp-osG"/>
+                    <constraint firstAttribute="bottom" secondItem="IM8-ky-nph" secondAttribute="bottom" constant="20" id="1rn-2A-g3w"/>
+                    <constraint firstAttribute="trailing" secondItem="tTN-bB-bzI" secondAttribute="trailing" constant="15" id="4jC-5v-7WV"/>
+                    <constraint firstAttribute="trailing" secondItem="IM8-ky-nph" secondAttribute="trailing" constant="15" id="4mN-EA-Fnp"/>
+                    <constraint firstItem="imP-kt-gZ5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="8Z3-aA-vM4"/>
+                    <constraint firstItem="tTN-bB-bzI" firstAttribute="leading" secondItem="fYV-KC-2pt" secondAttribute="trailing" constant="10" id="B5W-Zg-iJb"/>
+                    <constraint firstItem="gFb-Iv-nn7" firstAttribute="top" secondItem="fYV-KC-2pt" secondAttribute="bottom" constant="8" id="BKQ-nm-Dl3"/>
+                    <constraint firstItem="gFb-Iv-nn7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ErP-wX-R8d"/>
+                    <constraint firstAttribute="bottom" secondItem="tTN-bB-bzI" secondAttribute="bottom" constant="20" id="Ruh-DG-YCs"/>
+                    <constraint firstItem="tTN-bB-bzI" firstAttribute="leading" secondItem="gFb-Iv-nn7" secondAttribute="trailing" constant="6" id="bKC-QM-bft"/>
+                    <constraint firstAttribute="trailing" secondItem="oVV-Z0-60B" secondAttribute="trailing" constant="15" id="dya-oc-FA1"/>
+                    <constraint firstAttribute="bottom" secondItem="gFb-Iv-nn7" secondAttribute="bottom" constant="21" id="f3V-ZG-JMx"/>
+                    <constraint firstItem="oVV-Z0-60B" firstAttribute="top" secondItem="imP-kt-gZ5" secondAttribute="bottom" constant="-2" id="hpy-a0-WgI"/>
+                    <constraint firstAttribute="trailing" secondItem="imP-kt-gZ5" secondAttribute="trailing" constant="15" id="iUk-do-oTz"/>
+                    <constraint firstItem="fYV-KC-2pt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="l3V-xy-I37"/>
+                    <constraint firstItem="fYV-KC-2pt" firstAttribute="top" secondItem="oVV-Z0-60B" secondAttribute="bottom" constant="8" id="v7G-6q-Hiw"/>
+                    <constraint firstItem="imP-kt-gZ5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="w32-Nj-Cfk"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="AZt-hH-eqa"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backBtn" destination="CDN-vg-bPl" id="IS5-rZ-9LA"/>
+                <outlet property="customcountryLabel" destination="fYV-KC-2pt" id="IlD-kn-pl7"/>
+                <outlet property="entireLabel" destination="imP-kt-gZ5" id="FHt-sq-84T"/>
+                <outlet property="hostedLabel" destination="gFb-Iv-nn7" id="bYo-FK-BH8"/>
+                <outlet property="itemTitleLabel" destination="oVV-Z0-60B" id="ndG-xM-PO8"/>
+                <outlet property="likeBtn" destination="2mS-C5-MYz" id="dUh-Ip-Roh"/>
+                <outlet property="profileImage" destination="tTN-bB-bzI" id="FNl-Dv-H18"/>
+                <outlet property="profileImg" destination="IM8-ky-nph" id="SQc-oV-zeg"/>
+                <outlet property="shareBtn" destination="6Zn-br-eNL" id="zBk-lq-Zdb"/>
+            </connections>
+            <point key="canvasLocation" x="236.95652173913047" y="165.73660714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Heart" width="25" height="25"/>
+        <image name="back_white" width="25" height="25"/>
+        <image name="share" width="25" height="25"/>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.1215686274509804" green="0.12941176470588239" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

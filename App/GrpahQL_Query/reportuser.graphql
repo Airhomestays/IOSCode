@@ -1,0 +1,6 @@
+mutation createReportUser($reporterId: String, $userId: String, $reportType: String, $profileId: Int){
+createReportUser(reporterId: $reporterId, userId: $userId, reportType: $reportType, profileId: $profileId) {
+status
+errorMessage
+}
+}

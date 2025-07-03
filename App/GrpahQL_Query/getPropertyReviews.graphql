@@ -1,0 +1,26 @@
+query getPropertyReviews($currentPage: Int!, $listId: Int!) {
+  getPropertyReviews(currentPage: $currentPage, listId: $listId) {
+    status
+    errorMessage
+    count
+    currentPage
+    results {
+      id
+      reservationId
+      listId
+      authorId
+      userId
+      reviewContent
+      rating
+      createdAt
+      isAdmin
+      authorData {
+        ...profileFields
+      }
+      userData {
+        ...profileFields
+      }
+    }
+  }
+}
+

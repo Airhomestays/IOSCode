@@ -1,0 +1,26 @@
+# Contact Host
+mutation ContactHost(
+$listId: Int!,
+$hostId: String!,
+$content: String!,
+$userId: String!,
+$type: String,
+$startDate: String!,
+$endDate: String!,
+$personCapacity: Int
+) {
+CreateEnquiry(
+listId: $listId,
+hostId: $hostId,
+userId: $userId,
+content: $content,
+type: $type,
+startDate: $startDate,
+endDate: $endDate,
+personCapacity: $personCapacity
+) {
+status
+errorMessage
+
+}
+}

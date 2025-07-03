@@ -1,0 +1,35 @@
+mutation createListing($listId: Int, $roomType: String, $houseType: String, $residenceType: String, $bedrooms: String, $buildingSize: String, $bedType: String, $beds: Int, $personCapacity: Int, $bathrooms: Float, $bathroomType: String, $country: String, $street: String, $buildingName: String, $city: String, $state: String, $zipcode: String, $lat: Float, $lng: Float, $bedTypes: String,    $isMapTouched: Boolean, $amenities: [Int], $safetyAmenities: [Int], $spaces: [Int]) {
+createListing(listId: $listId,roomType: $roomType, houseType: $houseType, residenceType: $residenceType, bedrooms: $bedrooms, buildingSize: $buildingSize, bedType: $bedType, beds: $beds, personCapacity: $personCapacity, bathrooms: $bathrooms, bathroomType: $bathroomType, country: $country, street: $street, buildingName: $buildingName, city: $city, state: $state, zipcode: $zipcode, lat: $lat, lng: $lng, bedTypes: $bedTypes, isMapTouched: $isMapTouched, amenities: $amenities,safetyAmenities: $safetyAmenities, spaces: $spaces) {
+id
+results{
+roomType
+houseType
+residenceType
+bedrooms
+buildingSize
+bedType
+beds
+personCapacity
+bathrooms
+bathroomType
+country
+street
+buildingName
+city
+state
+zipcode
+lat
+lng
+bedTypes
+isMapTouched
+amenities
+safetyAmenities
+spaces
+}
+status
+errorMessage
+actionType
+}
+}
+
+

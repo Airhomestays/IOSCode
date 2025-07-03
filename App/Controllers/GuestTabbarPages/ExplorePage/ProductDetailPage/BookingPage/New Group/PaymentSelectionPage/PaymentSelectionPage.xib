@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="lineto-circular-pro-medium.ttf">
+            <string>Circular-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentSelectionPage" customModule="App" customModuleProvider="target">
+            <connections>
+                <outlet property="backBtn" destination="qZB-UL-Q23" id="9ah-aX-xLK"/>
+                <outlet property="bottomView" destination="gSO-Lp-SIe" id="MeC-96-d47"/>
+                <outlet property="lblPaymentType" destination="1NU-3Y-sCE" id="rhh-Sf-QpE"/>
+                <outlet property="proceedToPayBtn" destination="1ME-Kd-Hat" id="s8W-aq-mYn"/>
+                <outlet property="tableView" destination="dPm-qT-MXg" id="mzS-R3-R4Y"/>
+                <outlet property="topView" destination="Ctf-DC-R07" id="bH2-0y-3Zf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ctf-DC-R07">
+                    <rect key="frame" x="0.0" y="15" width="375" height="80"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZB-UL-Q23">
+                            <rect key="frame" x="15" y="30" width="36" height="36"/>
+                            <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="36" id="2b2-EN-duB"/>
+                                <constraint firstAttribute="height" constant="36" id="Fbh-gT-Je5"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                            <state key="normal" image="back_black"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="18"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskstoBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="backBtnActionTapped:" destination="-1" eventType="touchUpInside" id="4td-5Q-pjb"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NU-3Y-sCE">
+                            <rect key="frame" x="76" y="37.5" width="275" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="1NU-3Y-sCE" firstAttribute="leading" secondItem="qZB-UL-Q23" secondAttribute="trailing" constant="25" id="2xX-6Z-oDu"/>
+                        <constraint firstAttribute="trailing" secondItem="1NU-3Y-sCE" secondAttribute="trailing" constant="24" id="A10-nw-v3N"/>
+                        <constraint firstItem="1NU-3Y-sCE" firstAttribute="centerY" secondItem="qZB-UL-Q23" secondAttribute="centerY" id="OuU-1A-av9"/>
+                        <constraint firstAttribute="height" constant="80" id="QAH-PK-gui"/>
+                        <constraint firstItem="qZB-UL-Q23" firstAttribute="leading" secondItem="Ctf-DC-R07" secondAttribute="leading" constant="15" id="TCe-Qx-keL"/>
+                        <constraint firstItem="qZB-UL-Q23" firstAttribute="top" secondItem="Ctf-DC-R07" secondAttribute="top" constant="30" id="dR0-UO-6cS"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSO-Lp-SIe">
+                    <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ME-Kd-Hat">
+                            <rect key="frame" x="20" y="10" width="335" height="50"/>
+                            <color key="backgroundColor" red="1" green="0.27058823529999998" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="eb5-Qb-IOR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Circular-Medium" family="Circular" pointSize="18"/>
+                            <state key="normal" title="Add Payment">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="proceedToPayTapped:" destination="-1" eventType="touchUpInside" id="NhP-HP-EeZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="1ME-Kd-Hat" secondAttribute="trailing" constant="20" id="0OT-ts-II2"/>
+                        <constraint firstAttribute="bottom" secondItem="1ME-Kd-Hat" secondAttribute="bottom" constant="20" id="1fs-yd-ekQ"/>
+                        <constraint firstAttribute="height" constant="80" id="Av7-lC-mve"/>
+                        <constraint firstItem="1ME-Kd-Hat" firstAttribute="leading" secondItem="gSO-Lp-SIe" secondAttribute="leading" constant="20" id="rn1-q0-TW7"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dPm-qT-MXg">
+                    <rect key="frame" x="0.0" y="100" width="375" height="482"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="gSO-Lp-SIe" secondAttribute="bottom" id="4bY-wo-qDQ"/>
+                <constraint firstAttribute="trailing" secondItem="gSO-Lp-SIe" secondAttribute="trailing" id="FGn-RB-Aun"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ctf-DC-R07" secondAttribute="trailing" id="NDq-PI-6lZ"/>
+                <constraint firstItem="Ctf-DC-R07" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="WGx-LX-vqA"/>
+                <constraint firstItem="Ctf-DC-R07" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zga-bN-f51"/>
+                <constraint firstItem="gSO-Lp-SIe" firstAttribute="top" secondItem="dPm-qT-MXg" secondAttribute="bottom" constant="5" id="bc4-ug-ndZ"/>
+                <constraint firstItem="gSO-Lp-SIe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hf3-Oj-fLf"/>
+                <constraint firstItem="dPm-qT-MXg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jOQ-ac-VFM"/>
+                <constraint firstItem="dPm-qT-MXg" firstAttribute="top" secondItem="Ctf-DC-R07" secondAttribute="bottom" constant="5" id="lUk-Uo-YHE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dPm-qT-MXg" secondAttribute="trailing" id="svX-aS-OsN"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="112.89355322338831"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_black" width="25" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

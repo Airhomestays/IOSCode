@@ -1,0 +1,19 @@
+
+mutation EditProfile (
+$userId: String!,
+$fieldName: String!,
+$fieldValue: String,
+$deviceType: String!,
+$deviceId: String!) {
+userUpdate (
+userId: $userId,
+fieldName: $fieldName,
+fieldValue: $fieldValue,
+deviceType: $deviceType,
+deviceId: $deviceId,
+) {
+status
+errorMessage
+userToken
+}
+}

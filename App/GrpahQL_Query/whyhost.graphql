@@ -1,0 +1,17 @@
+query getWhyHostData {
+    getWhyHostData {
+        status
+        errorMessage
+        results {
+            id
+            imageName
+            title
+            buttonLabel
+        }
+    }
+}
+
+
+
+
+

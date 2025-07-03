@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="lineto-circular-bold.ttf">
+            <string>Circular-Bold</string>
+        </array>
+        <array key="lineto-circular-pro-medium.ttf">
+            <string>Circular-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VerificationSuccessVC" customModule="App" customModuleProvider="target">
+            <connections>
+                <outlet property="Offline_button" destination="CFh-hy-UZa" id="MJm-N1-998"/>
+                <outlet property="Success_Validation" destination="jom-1V-3XR" id="agT-sc-11t"/>
+                <outlet property="UIView_Animation" destination="iTn-jW-CrQ" id="Huc-Z6-4Va"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTn-jW-CrQ">
+                    <rect key="frame" x="20" y="348" width="374" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jom-1V-3XR">
+                            <rect key="frame" x="8" y="81" width="358" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="jom-1V-3XR" secondAttribute="height" multiplier="25:4" constant="108" id="s6r-dc-xdZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Circular-Bold" family="Circular" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="DEw-qK-dFF"/>
+                        <constraint firstItem="jom-1V-3XR" firstAttribute="leading" secondItem="iTn-jW-CrQ" secondAttribute="leading" constant="8" id="O8i-TB-5Rz"/>
+                        <constraint firstAttribute="width" constant="374" id="SqO-vG-myr"/>
+                        <constraint firstAttribute="trailing" secondItem="jom-1V-3XR" secondAttribute="trailing" constant="8" id="XG0-qs-pO7"/>
+                        <constraint firstItem="jom-1V-3XR" firstAttribute="top" secondItem="iTn-jW-CrQ" secondAttribute="top" constant="81" id="f37-qN-dcy"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFh-hy-UZa">
+                    <rect key="frame" x="59" y="558" width="295" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="CFh-hy-UZa" secondAttribute="height" multiplier="64:13" id="Doe-aM-v8U"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Circular-Medium" family="Circular" pointSize="19"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.0" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CFh-hy-UZa" firstAttribute="top" secondItem="iTn-jW-CrQ" secondAttribute="bottom" constant="10" id="9yx-Pv-Y9t"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CFh-hy-UZa" secondAttribute="trailing" constant="60" id="Nbh-Pj-ymR"/>
+                <constraint firstItem="CFh-hy-UZa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="59" id="PMs-NZ-Xv4"/>
+                <constraint firstItem="iTn-jW-CrQ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="WPc-BJ-rLa"/>
+                <constraint firstItem="iTn-jW-CrQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nRz-FI-cbV"/>
+            </constraints>
+            <point key="canvasLocation" x="128.98550724637681" y="135.9375"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TripsViewPage" customModule="Rent_All" customModuleProvider="target">
+            <connections>
+                <outlet property="topView" destination="fM6-hF-afJ" id="2dL-9L-TFt"/>
+                <outlet property="tripViewTable" destination="QhJ-iw-OrQ" id="B4K-7u-6Cm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fM6-hF-afJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mJ-CZ-TSl">
+                            <rect key="frame" x="15" y="30" width="45" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="BFf-Gh-dTd"/>
+                                <constraint firstAttribute="height" constant="45" id="oGr-an-PwM"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="14" minY="14" maxX="14" maxY="14"/>
+                            <state key="normal" image="close"/>
+                            <connections>
+                                <action selector="closeBtnTapped:" destination="-1" eventType="touchUpInside" id="zEp-K3-Tci"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="7mJ-CZ-TSl" firstAttribute="leading" secondItem="Pot-5h-Ns2" secondAttribute="leading" constant="15" id="4af-Zs-PI2"/>
+                        <constraint firstItem="Pot-5h-Ns2" firstAttribute="bottom" secondItem="7mJ-CZ-TSl" secondAttribute="bottom" constant="5" id="KHh-lj-bAe"/>
+                        <constraint firstAttribute="height" constant="80" id="YKG-IZ-BVr"/>
+                        <constraint firstItem="7mJ-CZ-TSl" firstAttribute="leading" secondItem="Pot-5h-Ns2" secondAttribute="leading" constant="15" id="uZI-PM-rBK"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="Pot-5h-Ns2"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QhJ-iw-OrQ">
+                    <rect key="frame" x="0.0" y="80" width="375" height="587"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Bht-eW-CX7"/>
+                        <outlet property="delegate" destination="-1" id="Alk-ve-lWK"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fM6-hF-afJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2Iv-hY-m4o"/>
+                <constraint firstItem="QhJ-iw-OrQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7od-PB-pF5"/>
+                <constraint firstItem="fM6-hF-afJ" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Apo-sW-Ked"/>
+                <constraint firstItem="QhJ-iw-OrQ" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Rwl-af-Q0c"/>
+                <constraint firstItem="QhJ-iw-OrQ" firstAttribute="top" secondItem="fM6-hF-afJ" secondAttribute="bottom" id="eah-EY-0AQ"/>
+                <constraint firstItem="fM6-hF-afJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vUf-3K-doE"/>
+                <constraint firstItem="QhJ-iw-OrQ" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="zbC-Ac-eYH"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="79.610194902548727"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close" width="50" height="50"/>
+    </resources>
+</document>

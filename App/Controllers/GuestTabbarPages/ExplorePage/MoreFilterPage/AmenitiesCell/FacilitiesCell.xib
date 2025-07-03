@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="linetocircular.ttf">
+            <string>Circular-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FacilitiesCell" id="KGk-i7-Jjw" customClass="FacilitiesCell" customModule="App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="489" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="489" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instant Book" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJZ-cf-yHZ">
+                        <rect key="frame" x="82" y="20" width="383" height="22"/>
+                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="17"/>
+                        <color key="textColor" red="0.40784313725490196" green="0.40784313725490196" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhF-wY-R3b">
+                        <rect key="frame" x="20" y="20" width="20" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="bjF-rW-Kao"/>
+                            <constraint firstAttribute="width" constant="20" id="sO5-43-h9A"/>
+                        </constraints>
+                        <state key="normal" image="unchecked"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0ou-8I-cp7">
+                        <rect key="frame" x="55" y="20" width="18" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="ShE-SV-TjI"/>
+                            <constraint firstAttribute="width" constant="18" id="hhj-r7-1uJ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="PhF-wY-R3b" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IjA-8h-jKa"/>
+                    <constraint firstItem="0ou-8I-cp7" firstAttribute="centerY" secondItem="PhF-wY-R3b" secondAttribute="centerY" id="LDg-2I-b5f"/>
+                    <constraint firstItem="0ou-8I-cp7" firstAttribute="leading" secondItem="PhF-wY-R3b" secondAttribute="trailing" constant="15" id="WOi-IP-QEz"/>
+                    <constraint firstItem="0ou-8I-cp7" firstAttribute="top" secondItem="PhF-wY-R3b" secondAttribute="top" id="Zup-Xw-sDu"/>
+                    <constraint firstItem="EJZ-cf-yHZ" firstAttribute="leading" secondItem="0ou-8I-cp7" secondAttribute="trailing" constant="9" id="eEK-h2-1Uw"/>
+                    <constraint firstAttribute="trailing" secondItem="EJZ-cf-yHZ" secondAttribute="trailing" constant="24" id="lk5-F6-2yO"/>
+                    <constraint firstItem="PhF-wY-R3b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="tn1-dW-0jL"/>
+                    <constraint firstItem="EJZ-cf-yHZ" firstAttribute="top" secondItem="0ou-8I-cp7" secondAttribute="top" id="wU2-39-dPv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="amenitieslistTile" destination="EJZ-cf-yHZ" id="YWl-AX-7G2"/>
+                <outlet property="checkBtn" destination="PhF-wY-R3b" id="hQh-2C-2Hv"/>
+                <outlet property="facilitiesImgIcon" destination="0ou-8I-cp7" id="wXH-5W-cdR"/>
+            </connections>
+            <point key="canvasLocation" x="36.956521739130437" y="34.821428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="unchecked" width="22" height="22"/>
+    </resources>
+</document>

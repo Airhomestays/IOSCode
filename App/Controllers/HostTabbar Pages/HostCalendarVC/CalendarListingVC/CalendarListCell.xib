@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="linetocircular.ttf">
+            <string>Circular-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="149" id="KGk-i7-Jjw" customClass="CalendarListCell" customModule="App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="143"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="143"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeJ-uQ-LNU">
+                        <rect key="frame" x="10" y="138" width="356" height="1"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Any-OP-1aR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entire Place" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5F-Ku-kyh">
+                        <rect key="frame" x="127" y="50" width="229" height="19"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="15"/>
+                        <color key="textColor" red="0.64705882349999999" green="0.16078431369999999" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-1" translatesAutoresizingMaskIntoConstraints="NO" id="GSe-u3-Okj">
+                        <rect key="frame" x="12" y="20" width="103" height="69"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="69" id="96S-72-eBh"/>
+                            <constraint firstAttribute="width" constant="103" id="oxP-NW-d7u"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Royal castle with " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuH-no-YoD">
+                        <rect key="frame" x="127" y="20" width="229" height="22"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verify-round" translatesAutoresizingMaskIntoConstraints="NO" id="IuN-x2-L4x">
+                        <rect key="frame" x="94" y="25" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="lff-lI-ZRx"/>
+                            <constraint firstAttribute="height" constant="16" id="xQh-MS-L2Y"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FeJ-uQ-LNU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="GSe-u3-Okj" secondAttribute="bottom" constant="20" id="0bA-5W-dxb"/>
+                    <constraint firstItem="FeJ-uQ-LNU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="0ua-la-02h"/>
+                    <constraint firstItem="IuN-x2-L4x" firstAttribute="trailing" secondItem="GSe-u3-Okj" secondAttribute="trailing" constant="-5" id="4tX-nq-1Ai"/>
+                    <constraint firstAttribute="trailing" secondItem="NuH-no-YoD" secondAttribute="trailing" constant="20" id="6ux-za-Iy6"/>
+                    <constraint firstItem="GSe-u3-Okj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="DNX-Tg-pFf"/>
+                    <constraint firstItem="NuH-no-YoD" firstAttribute="leading" secondItem="GSe-u3-Okj" secondAttribute="trailing" constant="12" id="EJx-dF-qJH"/>
+                    <constraint firstItem="NuH-no-YoD" firstAttribute="top" secondItem="GSe-u3-Okj" secondAttribute="top" id="JDi-BI-qH4"/>
+                    <constraint firstItem="FeJ-uQ-LNU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="M5F-Ku-kyh" secondAttribute="bottom" constant="10" id="MGz-U7-ZcG"/>
+                    <constraint firstAttribute="bottom" secondItem="FeJ-uQ-LNU" secondAttribute="bottom" constant="4" id="QOL-s4-p6D"/>
+                    <constraint firstItem="M5F-Ku-kyh" firstAttribute="trailing" secondItem="NuH-no-YoD" secondAttribute="trailing" id="Tg8-A0-Pa8"/>
+                    <constraint firstAttribute="trailing" secondItem="FeJ-uQ-LNU" secondAttribute="trailing" constant="10" id="VhA-ca-vc8"/>
+                    <constraint firstItem="M5F-Ku-kyh" firstAttribute="leading" secondItem="NuH-no-YoD" secondAttribute="leading" id="YCg-eh-JUD"/>
+                    <constraint firstItem="IuN-x2-L4x" firstAttribute="top" secondItem="GSe-u3-Okj" secondAttribute="top" constant="5" id="Yj7-qg-Dvx"/>
+                    <constraint firstItem="M5F-Ku-kyh" firstAttribute="top" secondItem="NuH-no-YoD" secondAttribute="bottom" constant="8" id="eyD-dX-GJT"/>
+                    <constraint firstItem="GSe-u3-Okj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="t9f-Zr-tyR"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="entireLabel" destination="M5F-Ku-kyh" id="Da2-jF-qyu"/>
+                <outlet property="lineview" destination="FeJ-uQ-LNU" id="97k-FJ-34Z"/>
+                <outlet property="listimage" destination="GSe-u3-Okj" id="O8M-P0-qf4"/>
+                <outlet property="tickImage" destination="IuN-x2-L4x" id="g3A-oE-gFJ"/>
+                <outlet property="titleLabel" destination="NuH-no-YoD" id="oLE-61-lWz"/>
+            </connections>
+            <point key="canvasLocation" x="149.27536231884059" y="157.03125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="home-1" width="1429.3333740234375" height="949.33331298828125"/>
+        <image name="verify-round" width="17.454999923706055" height="17.454999923706055"/>
+    </resources>
+</document>

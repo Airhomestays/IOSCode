@@ -1,0 +1,63 @@
+mutation UpdateListingStep3(
+$id: Int,
+$houseRules: [Int],
+$bookingNoticeTime:String,
+$checkInStart:String,
+$checkInEnd:String,
+$maxDaysNotice:String,
+$minNight:Int,
+$maxNight:Int,
+$basePrice:Float,
+$cleaningPrice:Float,
+$tax: Float,
+$currency:String,
+$weeklyDiscount:Int,
+$monthlyDiscount:Int,
+$blockedDates: [String],
+$bookingType: String!,
+$cancellationPolicy: Int,
+)
+{
+updateListingStep3(
+id: $id,
+houseRules: $houseRules,
+bookingNoticeTime:$bookingNoticeTime,
+checkInStart:$checkInStart,
+checkInEnd:$checkInEnd,
+maxDaysNotice:$maxDaysNotice,
+minNight:$minNight,
+maxNight:$maxNight,
+basePrice:$basePrice,
+cleaningPrice:$cleaningPrice,
+tax: $tax,
+currency:$currency,
+weeklyDiscount:$weeklyDiscount,
+monthlyDiscount:$monthlyDiscount,
+blockedDates: $blockedDates,
+bookingType: $bookingType,
+cancellationPolicy: $cancellationPolicy
+) {
+results{
+id,
+houseRules,
+bookingNoticeTime,
+checkInStart,
+checkInEnd,
+maxDaysNotice,
+minNight,
+maxNight,
+basePrice,
+cleaningPrice,
+tax,
+currency,
+weeklyDiscount,
+monthlyDiscount,
+blockedDates,
+
+}
+status
+errorMessage
+actionType
+}
+}
+

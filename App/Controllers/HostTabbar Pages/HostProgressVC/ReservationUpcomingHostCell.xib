@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="lineto-circular-pro-medium.ttf">
+            <string>Circular-Medium</string>
+        </array>
+        <array key="linetocircular.ttf">
+            <string>Circular-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReservationUpcomingHostCell" rowHeight="204" id="KGk-i7-Jjw" customClass="ReservationUpcomingHostCell" customModule="App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Kx1-oh-Frf">
+                        <rect key="frame" x="275" y="48" width="90" height="164"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8p-Ah-UgR">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="6ky-OC-g7f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Message">
+                                    <color key="titleColor" red="0.0" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mv9-MR-K4x">
+                                <rect key="frame" x="0.0" y="36" width="90" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="alD-Ij-kEb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="16"/>
+                                <state key="normal" title="Approve">
+                                    <color key="titleColor" red="0.0" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJ6-kP-cpc">
+                                <rect key="frame" x="0.0" y="69" width="90" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="FrR-Jg-qEe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="16"/>
+                                <state key="normal" title="Decline">
+                                    <color key="titleColor" red="0.0" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIA-nL-ZX8">
+                                <rect key="frame" x="0.0" y="102" width="90" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="8wq-hY-tah"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="16"/>
+                                <state key="normal" title="Receipt">
+                                    <color key="titleColor" red="0.0" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="od5-sS-b7s">
+                                <rect key="frame" x="0.0" y="135" width="90" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="NtP-M4-6mV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="16"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.0" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="bHC-ra-4eT"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Approved" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBv-HC-bdJ">
+                        <rect key="frame" x="20" y="50" width="225" height="25"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="4jW-Rh-Uwx"/>
+                            <constraint firstAttribute="width" constant="225" id="8oe-6C-CZX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Medium" family="Circular" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dggd - dggd dggd dggd dggddg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqO-PB-arL">
+                        <rect key="frame" x="20" y="15" width="280" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="hsW-fl-JBF"/>
+                            <constraint firstAttribute="width" constant="280" id="ljs-ui-qeE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Medium" family="Circular" pointSize="19"/>
+                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fsgsfg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Bo-Od-uYD">
+                        <rect key="frame" x="20" y="77" width="268" height="33"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="268" id="MX8-sz-ZKL"/>
+                            <constraint firstAttribute="height" constant="33" id="fH5-PG-0Ho"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeX-Jl-pR6">
+                        <rect key="frame" x="20" y="112" width="258" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="258" id="s41-LL-NZv"/>
+                            <constraint firstAttribute="height" constant="30" id="uqc-I2-BWn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="17"/>
+                        <state key="normal" title="feel like home">
+                            <color key="titleColor" red="0.0" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aaa123 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yI-LF-GKz">
+                        <rect key="frame" x="20" y="144" width="258" height="25"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="BIn-qY-xke"/>
+                            <constraint firstAttribute="width" constant="258" id="ZGF-gK-2j4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="madurai,tamilnadu,IN 6000014" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqc-K5-aIj">
+                        <rect key="frame" x="20" y="177" width="258" height="25"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="2bF-U9-xDt"/>
+                            <constraint firstAttribute="width" constant="258" id="6NC-9J-Hne"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5f-0u-u7y">
+                        <rect key="frame" x="20" y="213" width="0.0" height="1"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="n7h-mH-qaF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Kx1-oh-Frf" firstAttribute="top" secondItem="wqO-PB-arL" secondAttribute="bottom" constant="3" id="6na-Xb-Vsv"/>
+                    <constraint firstItem="wqO-PB-arL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Bfz-wK-QKT"/>
+                    <constraint firstItem="rBv-HC-bdJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ElT-ej-QBi"/>
+                    <constraint firstItem="iqc-K5-aIj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Q4B-0v-3yo"/>
+                    <constraint firstAttribute="trailing" secondItem="Kx1-oh-Frf" secondAttribute="trailing" constant="10" id="Re3-Sj-2Ss"/>
+                    <constraint firstItem="8yI-LF-GKz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Rsy-uM-dNR"/>
+                    <constraint firstItem="2Bo-Od-uYD" firstAttribute="top" secondItem="rBv-HC-bdJ" secondAttribute="bottom" constant="2" id="ZuB-fB-4Qa"/>
+                    <constraint firstItem="8yI-LF-GKz" firstAttribute="top" secondItem="BeX-Jl-pR6" secondAttribute="bottom" constant="2" id="cpb-vB-olY"/>
+                    <constraint firstItem="wqO-PB-arL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="fM8-Ws-fNv"/>
+                    <constraint firstItem="Kx1-oh-Frf" firstAttribute="leading" secondItem="BeX-Jl-pR6" secondAttribute="trailing" constant="-3" id="o6S-gf-qmN"/>
+                    <constraint firstItem="k5f-0u-u7y" firstAttribute="top" secondItem="iqc-K5-aIj" secondAttribute="bottom" constant="11" id="opk-em-RmE"/>
+                    <constraint firstItem="BeX-Jl-pR6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="uiP-qG-CFy"/>
+                    <constraint firstItem="rBv-HC-bdJ" firstAttribute="top" secondItem="wqO-PB-arL" secondAttribute="bottom" constant="5" id="wYV-8e-GOP"/>
+                    <constraint firstItem="k5f-0u-u7y" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="wnZ-jI-hYO"/>
+                    <constraint firstItem="2Bo-Od-uYD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="xMm-RO-QfD"/>
+                    <constraint firstItem="k5f-0u-u7y" firstAttribute="leading" secondItem="iqc-K5-aIj" secondAttribute="leading" id="xux-mX-DGk"/>
+                    <constraint firstItem="BeX-Jl-pR6" firstAttribute="top" secondItem="2Bo-Od-uYD" secondAttribute="bottom" constant="2" id="yFl-wB-b7Q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressLAbel" destination="iqc-K5-aIj" id="wen-Om-Qle"/>
+                <outlet property="approveBtn" destination="Mv9-MR-K4x" id="zgb-1A-R1l"/>
+                <outlet property="approvedLabel" destination="rBv-HC-bdJ" id="28M-71-yEz"/>
+                <outlet property="cancelBtn" destination="od5-sS-b7s" id="kYH-Jh-5CN"/>
+                <outlet property="dateLabel" destination="2Bo-Od-uYD" id="NRC-n9-duj"/>
+                <outlet property="declineBtn" destination="AJ6-kP-cpc" id="PDM-H6-iTh"/>
+                <outlet property="messageBtn" destination="Q8p-Ah-UgR" id="lZT-og-75c"/>
+                <outlet property="nameLabel" destination="wqO-PB-arL" id="Cgt-jc-qID"/>
+                <outlet property="receiptBtn" destination="HIA-nL-ZX8" id="rXt-Zj-TOB"/>
+                <outlet property="streetLabel" destination="8yI-LF-GKz" id="6Nn-gg-KrU"/>
+                <outlet property="titleBtn" destination="BeX-Jl-pR6" id="wmN-Td-Lqz"/>
+            </connections>
+            <point key="canvasLocation" x="129.71014492753625" y="185.82589285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

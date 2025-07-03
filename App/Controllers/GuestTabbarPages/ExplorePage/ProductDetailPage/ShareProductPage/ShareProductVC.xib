@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShareProductVC" customModule="App" customModuleProvider="target">
+            <connections>
+                <outlet property="backgrndImage" destination="3G4-XW-qAX" id="R5R-Mj-1EQ"/>
+                <outlet property="shareTable" destination="QS8-k0-aLk" id="Nxw-GD-Dre"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-2" translatesAutoresizingMaskIntoConstraints="NO" id="3G4-XW-qAX">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QS8-k0-aLk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="0.90223371478873238" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="FIt-Ng-U2E"/>
+                        <outlet property="delegate" destination="-1" id="nrt-CS-iq1"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="0.90190360915492962" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3G4-XW-qAX" secondAttribute="trailing" id="0vf-NG-1J4"/>
+                <constraint firstItem="QS8-k0-aLk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8ve-E4-D7V"/>
+                <constraint firstItem="QS8-k0-aLk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="D7I-Me-YT4"/>
+                <constraint firstAttribute="trailing" secondItem="QS8-k0-aLk" secondAttribute="trailing" id="TgL-15-C0L"/>
+                <constraint firstAttribute="bottom" secondItem="3G4-XW-qAX" secondAttribute="bottom" id="Vjl-eT-k8a"/>
+                <constraint firstAttribute="bottom" secondItem="QS8-k0-aLk" secondAttribute="bottom" id="ZRY-5w-yKC"/>
+                <constraint firstItem="3G4-XW-qAX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eGF-go-YO8"/>
+                <constraint firstItem="3G4-XW-qAX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yMw-HF-aPn"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="120.98950524737631"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home-2" width="833.33331298828125" height="555.66668701171875"/>
+    </resources>
+</document>

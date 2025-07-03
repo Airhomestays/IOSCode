@@ -1,0 +1,231 @@
+query Login(
+$email: String!,
+$password: String!,
+$deviceType: String!,
+$deviceDetail: String,
+$deviceId: String!
+) {
+userLogin (
+email: $email,
+password: $password,
+deviceType: $deviceType,
+deviceDetail: $deviceDetail,
+deviceId: $deviceId
+) {
+result {
+userId
+userToken
+user {
+firstName
+lastName
+gender
+dateOfBirth
+phoneNumber
+preferredLanguage
+preferredCurrency
+createdAt
+picture
+verification{
+id
+isPhoneVerified
+isEmailConfirmed
+isIdVerification
+isGoogleConnected
+isFacebookConnected
+}
+userData{
+type
+}
+}
+}
+status
+errorMessage
+}
+}
+
+
+query getPopularLocations {
+    getPopularLocations {
+        results {
+            id
+            location
+            locationAddress
+            image
+        }
+        status
+        errorMessage
+    }
+}
+
+
+
+
+query getDefaultSetting{
+# MostViewedListing
+getMostViewedListing {
+results {
+id
+title
+personCapacity
+beds
+bookingType
+coverPhoto
+reviewsCount,
+reviewsStarRating,
+listPhotos {
+id
+name
+type
+status
+}
+listingData {
+basePrice
+currency
+}
+settingsData {
+listsettings {
+id
+itemName
+}
+}
+wishListStatus
+isListOwner
+listPhotoName
+roomType
+popularLocationListing {
+     id
+     location
+     locationAddress
+     image
+     isEnable
+     createdAt
+     updatedAt
+   }
+}
+status
+errorMessage
+}
+# Recommend Listing
+getRecommend {
+results {
+id
+title
+personCapacity
+beds
+bookingType
+coverPhoto
+reviewsCount,
+reviewsStarRating,
+listPhotos {
+id
+name
+type
+status
+}
+listingData {
+basePrice
+currency
+}
+settingsData {
+listsettings {
+id
+itemName
+}
+}
+wishListStatus
+isListOwner
+listPhotoName
+roomType
+}
+status
+}
+
+# Currency Rate
+Currency {
+result {
+base
+rates
+}
+status
+errorMessage
+}
+
+#Default price in filter
+getSearchSettings {
+results {
+id
+minPrice
+maxPrice
+priceRangeCurrency
+}
+status
+errorMessage
+}
+
+# Filters
+getListingSettingsCommon {
+status
+errorMessage
+results {
+id
+typeName
+fieldType
+typeLabel
+step
+isEnable
+listSettings {
+id
+image
+typeId
+itemName
+otherItemName
+maximum
+minimum
+startValue
+endValue
+isEnable
+}
+}
+}
+
+}
+
+query getSecureSiteSettings($settingsType: String, $securityKey: String!) {
+    getSecureSiteSettings(settingsType: $settingsType, securityKey: $securityKey) {
+        status
+        errorMessage
+        results {
+            id
+            title
+            name
+            value
+            type
+            status
+        }
+    }
+}
+
+
+
+
+query UserBanStatus {
+getUserBanStatus {
+status
+userBanStatus
+errorMessage
+}
+}
+
+query getActiveSocialLogins {
+getActiveSocialLogins {
+status
+errorMessage
+results {
+facebook
+google
+}
+}
+}
+
+
+mutation sendUserFeedback ($type: String, $message: String){ userFeedback(type: $type, message: $message){ status errorMessage } }

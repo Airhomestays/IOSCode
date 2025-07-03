@@ -1,0 +1,33 @@
+mutation preapprove(
+$threadId: Int!,
+$content: String,
+$type: String,
+$startDate: String,
+$endDate: String,
+$personCapacity: Int,
+$reservationId: Int
+) {
+sendMessage(
+threadId: $threadId,
+content: $content,
+type: $type,
+startDate: $startDate,
+endDate: $endDate,
+personCapacity: $personCapacity,
+reservationId: $reservationId
+){
+results{
+id
+sentBy
+content
+type
+reservationId
+startDate
+endDate
+createdAt
+personCapacity
+}
+status
+errorMessage
+}
+}
