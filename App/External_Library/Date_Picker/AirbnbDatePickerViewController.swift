@@ -774,8 +774,8 @@ public class AirbnbDatePickerViewController: UICollectionViewController {
         }
         
         else {
-            
-            if endDateSelected && !isFirstTimeLoaded {
+          
+            if endDateSelected && !isFirstTimeLoaded && selectedStartDate != selectedEndDate {
                 self.handleClearInput()
                 isFirstTimeLoaded = false
                 endDateSelected = false
