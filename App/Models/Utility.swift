@@ -359,6 +359,15 @@ public class Utility: NSObject {
     func getLanguage() -> NSDictionary? {
         return UserDefaults.standard.value(forKey: "app_language") as? NSDictionary
     }
+    
+    func getValue(for key: String) -> String {
+        if let language = UserDefaults.standard.value(forKey: "app_language") as? NSDictionary, let value = language.value(forKey: key) as? String {
+            return value
+        }else {
+            return kEmptyString
+        }
+        
+    }
     //MARK:set App language
     func setDefaultLanguage(languageDict: NSDictionary){
         UserDefaults.standard.set(languageDict, forKey: "app_language")

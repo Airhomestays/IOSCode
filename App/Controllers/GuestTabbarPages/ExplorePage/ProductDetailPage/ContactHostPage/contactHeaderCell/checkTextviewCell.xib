@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -15,62 +17,178 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="checkTextviewCell" rowHeight="185" id="KGk-i7-Jjw" customClass="checkTextviewCell" customModule="App" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="380" height="183"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="checkTextviewCell" rowHeight="486" id="KGk-i7-Jjw" customClass="checkTextviewCell" customModule="App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="484"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="380" height="183"/>
+                <rect key="frame" x="0.0" y="0.0" width="380" height="484"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="gfgf" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1ad-fv-OVS">
-                        <rect key="frame" x="20" y="38" width="340" height="134"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vtt-Ci-1aI">
+                        <rect key="frame" x="0.0" y="0.0" width="380" height="256"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iDi-6e-EZW">
+                                <rect key="frame" x="20" y="0.0" width="340" height="256"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell your host about your trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWq-GI-C0F">
+                                        <rect key="frame" x="0.0" y="0.0" width="340" height="21"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="ykB-yQ-4U5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="16"/>
+                                        <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="gfgf" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1ad-fv-OVS">
+                                        <rect key="frame" x="0.0" y="29" width="340" height="134"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.95294117649999999" green="0.16862745100000001" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="134" id="wTB-l0-EtF"/>
+                                        </constraints>
+                                        <inset key="scrollIndicatorInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerradius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="KGk-i7-Jjw" id="dEy-Wr-Ide"/>
+                                        </connections>
+                                    </textView>
+                                    <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ncn-D3-KO5">
+                                        <rect key="frame" x="0.0" y="171" width="340" height="85"/>
+                                        <subviews>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rk7-Je-Yon" userLabel="CouponBox">
+                                                <rect key="frame" x="0.0" y="0.0" width="340" height="48"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8qa-a3-1v1">
+                                                        <rect key="frame" x="8" y="0.0" width="324" height="48"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpo-Kn-CFw">
+                                                                <rect key="frame" x="0.0" y="8" width="251" height="32"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="32" id="Egc-rH-Fxj"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="16"/>
+                                                                <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJY-oP-PVZ">
+                                                                <rect key="frame" x="259" y="10" width="65" height="28"/>
+                                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="65" id="AXY-VC-rwu"/>
+                                                                    <constraint firstAttribute="height" constant="28" id="qU8-0v-0ek"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="16"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="8"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ko3-PO-cMz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="340" height="48"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" red="0.074509803920000006" green="0.50196078430000002" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="8qa-a3-1v1" secondAttribute="trailing" constant="8" id="7nf-WR-ozf"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ko3-PO-cMz" secondAttribute="trailing" id="7u2-yR-aWW"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ko3-PO-cMz" secondAttribute="bottom" id="JAr-0R-giO"/>
+                                                    <constraint firstItem="8qa-a3-1v1" firstAttribute="leading" secondItem="Rk7-Je-Yon" secondAttribute="leading" constant="8" id="Kx6-m5-XwV"/>
+                                                    <constraint firstItem="ko3-PO-cMz" firstAttribute="leading" secondItem="Rk7-Je-Yon" secondAttribute="leading" id="kHE-yl-7Fe"/>
+                                                    <constraint firstItem="ko3-PO-cMz" firstAttribute="top" secondItem="Rk7-Je-Yon" secondAttribute="top" id="lDe-Xe-Gx3"/>
+                                                    <constraint firstItem="8qa-a3-1v1" firstAttribute="top" secondItem="Rk7-Je-Yon" secondAttribute="top" id="obX-5T-wJl"/>
+                                                    <constraint firstAttribute="bottom" secondItem="8qa-a3-1v1" secondAttribute="bottom" id="s45-VI-Jxb"/>
+                                                    <constraint firstAttribute="height" constant="48" id="wvY-t4-eFO"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="text_borderColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your coupon code is applied: Flat100 " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtm-gX-F57">
+                                                <rect key="frame" x="0.0" y="64" width="340" height="21"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="brG-rh-eNg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="16"/>
+                                                <color key="textColor" systemColor="systemGreenColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" red="0.95294117649999999" green="0.16862745100000001" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="134" id="uSh-L3-7rA"/>
+                            <constraint firstAttribute="bottom" secondItem="iDi-6e-EZW" secondAttribute="bottom" id="6Qy-8J-Elz"/>
+                            <constraint firstItem="iDi-6e-EZW" firstAttribute="top" secondItem="vtt-Ci-1aI" secondAttribute="top" id="AR8-h3-aPa"/>
+                            <constraint firstItem="iDi-6e-EZW" firstAttribute="leading" secondItem="vtt-Ci-1aI" secondAttribute="leading" constant="20" id="NDJ-05-KK0"/>
+                            <constraint firstAttribute="trailing" secondItem="iDi-6e-EZW" secondAttribute="trailing" constant="20" id="eYt-9y-Ass"/>
                         </constraints>
-                        <inset key="scrollIndicatorInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="17"/>
-                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerradius">
-                                <integer key="value" value="5"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                        </userDefinedRuntimeAttributes>
-                        <connections>
-                            <outlet property="delegate" destination="KGk-i7-Jjw" id="dEy-Wr-Ide"/>
-                        </connections>
-                    </textView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell your host about your trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWq-GI-C0F">
-                        <rect key="frame" x="20" y="0.0" width="340" height="31.5"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="16"/>
-                        <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="yWq-GI-C0F" secondAttribute="trailing" constant="20" id="CFN-u2-0bT"/>
-                    <constraint firstAttribute="bottom" secondItem="1ad-fv-OVS" secondAttribute="bottom" constant="11" id="Ef1-zp-Kyg"/>
-                    <constraint firstItem="1ad-fv-OVS" firstAttribute="top" secondItem="yWq-GI-C0F" secondAttribute="bottom" constant="6.5" id="Es2-Gb-pQl"/>
-                    <constraint firstItem="yWq-GI-C0F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Kjs-00-ot0"/>
-                    <constraint firstItem="yWq-GI-C0F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="KlQ-WD-6qv"/>
-                    <constraint firstItem="1ad-fv-OVS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="XhQ-1L-iD4"/>
-                    <constraint firstAttribute="trailing" secondItem="1ad-fv-OVS" secondAttribute="trailing" constant="20" symbolic="YES" id="wiN-a4-ALQ"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vtt-Ci-1aI" secondAttribute="bottom" constant="8" id="MFq-2P-Cxw"/>
+                    <constraint firstItem="vtt-Ci-1aI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="MNf-Q4-OWN"/>
+                    <constraint firstItem="vtt-Ci-1aI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XlZ-1b-Mhe"/>
+                    <constraint firstAttribute="trailing" secondItem="vtt-Ci-1aI" secondAttribute="trailing" id="pHi-Ot-yxF"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="applyCopounCodeBtn" destination="ko3-PO-cMz" id="qjP-5x-gYW"/>
+                <outlet property="applyLabel" destination="YJY-oP-PVZ" id="jx6-XK-sqR"/>
                 <outlet property="checkTxtview" destination="1ad-fv-OVS" id="Exv-5P-b1r"/>
+                <outlet property="couponAppliedLabel" destination="gtm-gX-F57" id="2Y0-pa-uOH"/>
+                <outlet property="couponCodeLabel" destination="zpo-Kn-CFw" id="E2y-50-7EU"/>
                 <outlet property="messageLabel" destination="yWq-GI-C0F" id="rLU-aU-glf"/>
             </connections>
-            <point key="canvasLocation" x="194.20289855072465" y="177.12053571428569"/>
+            <point key="canvasLocation" x="194.20289855072465" y="277.90178571428572"/>
         </tableViewCell>
     </objects>
     <resources>
+        <namedColor name="text_borderColor">
+            <color red="0.51372549019607838" green="0.51372549019607838" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="viewFlipsideBackgroundColor">
             <color red="0.1215686274509804" green="0.12941176470588239" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

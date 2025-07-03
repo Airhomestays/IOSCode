@@ -151,4 +151,4 @@ let guestTripsDateFormat = "MM/dd/YYYY"
 let itenarayReceiptDayFormat = "EEE"
 let itenararyReceiptDateFormat = "MMM dd yyyy"
 let receiptformat = "MMM dd yyyy"
-
+let kEmptyString = ""

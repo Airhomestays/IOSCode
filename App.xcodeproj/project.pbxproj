@@ -81,6 +81,13 @@
 		2CFE2EA522FAD6440064D9C4 /* BookInstantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFE2EA322FAD6440064D9C4 /* BookInstantViewController.swift */; };
 		2CFE2EA622FAD6440064D9C4 /* BookInstantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CFE2EA422FAD6440064D9C4 /* BookInstantViewController.xib */; };
 		5A025EF6D0ACE8D3AE7F66EE /* Pods_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B43CDFBD4D56A255E8807F66 /* Pods_App.framework */; };
+		5D9731202E16EB54005166DF /* PromotionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D97311B2E16EB54005166DF /* PromotionCell.xib */; };
+		5D9731212E16EB54005166DF /* PromotionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D97311E2E16EB54005166DF /* PromotionVC.xib */; };
+		5D9731222E16EB54005166DF /* PromotionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D97311A2E16EB54005166DF /* PromotionCell.swift */; };
+		5D9731232E16EB54005166DF /* PromotionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D97311D2E16EB54005166DF /* PromotionVC.swift */; };
+		5D9731252E16EBD6005166DF /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9731242E16EBD6005166DF /* UITableView+Ext.swift */; };
+		5D9731282E16F003005166DF /* checkTextviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D9731262E16F003005166DF /* checkTextviewCell.xib */; };
+		5D9731292E16F003005166DF /* checkTextviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9731272E16F003005166DF /* checkTextviewCell.swift */; };
 		7838D2852C6FD9D800093A67 /* BankDetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838D2832C6FD9D700093A67 /* BankDetCell.swift */; };
 		7838D2862C6FD9D800093A67 /* BankDetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7838D2842C6FD9D800093A67 /* BankDetCell.xib */; };
 		789A347B2C67ED1100CE2C16 /* BankDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 789A34792C67ED1100CE2C16 /* BankDetailsVC.xib */; };
@@ -161,8 +168,6 @@
 		B528EF04228E892700C99BFC /* ContactheaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B528EF02228E892700C99BFC /* ContactheaderCell.xib */; };
 		B528EF07228E8CF800C99BFC /* contactcheckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B528EF05228E8CF800C99BFC /* contactcheckCell.swift */; };
 		B528EF08228E8CF800C99BFC /* contactcheckCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B528EF06228E8CF800C99BFC /* contactcheckCell.xib */; };
-		B528EF0B228E947300C99BFC /* checkTextviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B528EF09228E947300C99BFC /* checkTextviewCell.swift */; };
-		B528EF0C228E947300C99BFC /* checkTextviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B528EF0A228E947300C99BFC /* checkTextviewCell.xib */; };
 		B52D5A79283CBADE00C83CE1 /* whyhost.graphql in Resources */ = {isa = PBXBuildFile; fileRef = B52D5A78283CBADE00C83CE1 /* whyhost.graphql */; };
 		B532C3E12601DD46007AADF1 /* getPropertyReviews.graphql in Resources */ = {isa = PBXBuildFile; fileRef = B532C3E02601DD46007AADF1 /* getPropertyReviews.graphql */; };
 		B5347405224B7F97003D8F89 /* AirbnbDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5347404224B7F96003D8F89 /* AirbnbDatePicker.swift */; };
@@ -730,6 +735,13 @@
 		2CFE2EA322FAD6440064D9C4 /* BookInstantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInstantViewController.swift; sourceTree = "<group>"; };
 		2CFE2EA422FAD6440064D9C4 /* BookInstantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookInstantViewController.xib; sourceTree = "<group>"; };
 		5C288CFFB4A6DE9E9C0AB61D /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.debug.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
+		5D97311A2E16EB54005166DF /* PromotionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionCell.swift; sourceTree = "<group>"; };
+		5D97311B2E16EB54005166DF /* PromotionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromotionCell.xib; sourceTree = "<group>"; };
+		5D97311D2E16EB54005166DF /* PromotionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionVC.swift; sourceTree = "<group>"; };
+		5D97311E2E16EB54005166DF /* PromotionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromotionVC.xib; sourceTree = "<group>"; };
+		5D9731242E16EBD6005166DF /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		5D9731262E16F003005166DF /* checkTextviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = checkTextviewCell.xib; sourceTree = "<group>"; };
+		5D9731272E16F003005166DF /* checkTextviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkTextviewCell.swift; sourceTree = "<group>"; };
 		7838D2832C6FD9D700093A67 /* BankDetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankDetCell.swift; sourceTree = "<group>"; };
 		7838D2842C6FD9D800093A67 /* BankDetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BankDetCell.xib; sourceTree = "<group>"; };
 		789A34792C67ED1100CE2C16 /* BankDetailsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BankDetailsVC.xib; sourceTree = "<group>"; };
@@ -811,8 +823,6 @@
 		B528EF02228E892700C99BFC /* ContactheaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactheaderCell.xib; sourceTree = "<group>"; };
 		B528EF05228E8CF800C99BFC /* contactcheckCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactcheckCell.swift; sourceTree = "<group>"; };
 		B528EF06228E8CF800C99BFC /* contactcheckCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = contactcheckCell.xib; sourceTree = "<group>"; };
-		B528EF09228E947300C99BFC /* checkTextviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkTextviewCell.swift; sourceTree = "<group>"; };
-		B528EF0A228E947300C99BFC /* checkTextviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = checkTextviewCell.xib; sourceTree = "<group>"; };
 		B52D5A78283CBADE00C83CE1 /* whyhost.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = whyhost.graphql; sourceTree = "<group>"; };
 		B532C3E02601DD46007AADF1 /* getPropertyReviews.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = getPropertyReviews.graphql; sourceTree = "<group>"; };
 		B5347404224B7F96003D8F89 /* AirbnbDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirbnbDatePicker.swift; sourceTree = "<group>"; };
@@ -1343,6 +1353,25 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5D97311C2E16EB54005166DF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5D97311A2E16EB54005166DF /* PromotionCell.swift */,
+				5D97311B2E16EB54005166DF /* PromotionCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5D97311F2E16EB54005166DF /* Promotion */ = {
+			isa = PBXGroup;
+			children = (
+				5D97311C2E16EB54005166DF /* Cells */,
+				5D97311D2E16EB54005166DF /* PromotionVC.swift */,
+				5D97311E2E16EB54005166DF /* PromotionVC.xib */,
+			);
+			path = Promotion;
+			sourceTree = "<group>";
+		};
 		B501C72B2282DC3B00D4E0E5 /* LanguagePage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1447,6 +1476,7 @@
 			children = (
 				B527CEFF2AFBB7A6004C3B17 /* Colors+ext.swift */,
 				B5BA60FC2AFC9E05001526CE /* UIView+ext.swift */,
+				5D9731242E16EBD6005166DF /* UITableView+Ext.swift */,
 				B53573A12B22E57900AD012E /* Validation+Ext.swift */,
 			);
 			path = Extension;
@@ -1493,8 +1523,8 @@
 				B528EF02228E892700C99BFC /* ContactheaderCell.xib */,
 				B528EF05228E8CF800C99BFC /* contactcheckCell.swift */,
 				B528EF06228E8CF800C99BFC /* contactcheckCell.xib */,
-				B528EF0A228E947300C99BFC /* checkTextviewCell.xib */,
-				B528EF09228E947300C99BFC /* checkTextviewCell.swift */,
+				5D9731262E16F003005166DF /* checkTextviewCell.xib */,
+				5D9731272E16F003005166DF /* checkTextviewCell.swift */,
 			);
 			path = contactHeaderCell;
 			sourceTree = "<group>";
@@ -2374,6 +2404,7 @@
 		B5B23233229C019600515A55 /* RequestbookVC */ = {
 			isa = PBXGroup;
 			children = (
+				5D97311F2E16EB54005166DF /* Promotion */,
 				B5EF62CA229BFC5000FB6A9D /* RequesttoBookPage */,
 				B5B23234229C01B800515A55 /* RequestbookVC.swift */,
 				B5B23235229C01B800515A55 /* RequestbookVC.xib */,
@@ -3060,7 +3091,6 @@
 				2CFAA45E22FBF209004A2B2E /* LawAndTaxViewController.xib in Resources */,
 				B5605D0326006F260051F5D8 /* writeUserReview.graphql in Resources */,
 				B5FC84D72256005F003C8EAC /* AmenityDetailCell.xib in Resources */,
-				B528EF0C228E947300C99BFC /* checkTextviewCell.xib in Resources */,
 				B5771AB22244E0FF0070DD96 /* ProfilePageVC.xib in Resources */,
 				B537ED5528115AD500E5434B /* imageScrollCollectionView.xib in Resources */,
 				2C0CDCBB22EAFA50009EAB4C /* PlaceListingViewController.xib in Resources */,
@@ -3107,6 +3137,8 @@
 				B5408EE722FAD34D0031E783 /* SpecialTextFieldCell.xib in Resources */,
 				B5EE962022572667004E4A2D /* MapPageVC.xib in Resources */,
 				2C77EAFE23BB4A120014199D /* HostProfileViewPage.xib in Resources */,
+				5D9731202E16EB54005166DF /* PromotionCell.xib in Resources */,
+				5D9731212E16EB54005166DF /* PromotionVC.xib in Resources */,
 				B5E9E1D322A519E300B91B5B /* NameReceiptCell.xib in Resources */,
 				B51F80C72240CBA300E437C1 /* WelcomePageVC.xib in Resources */,
 				B51F94112828F8B30074F793 /* HostVerifiedInfoCellTableViewCell.xib in Resources */,
@@ -3261,6 +3293,7 @@
 				B5B23237229C01B800515A55 /* RequestbookVC.xib in Resources */,
 				B5C91A1F227D8AB000178B4E /* search.graphql in Resources */,
 				B572DC49258A440100FA66DF /* homelistingCell.xib in Resources */,
+				5D9731282E16F003005166DF /* checkTextviewCell.xib in Resources */,
 				B56303CF22B20B4600ABAE78 /* ReceiverMessageonlyCell.xib in Resources */,
 				B52D5A79283CBADE00C83CE1 /* whyhost.graphql in Resources */,
 				B501C7312282DF4200D4E0E5 /* Language.graphql in Resources */,
@@ -3515,6 +3548,7 @@
 				B5B95FE422F7F50C00C4970C /* CalendarListCell.swift in Sources */,
 				B5AD7DC02242700C00E10420 /* FirstLastnamePageVC.swift in Sources */,
 				B58EAF4D24B82F7A00AF87BD /* ReviewlistCellTableViewCell.swift in Sources */,
+				5D9731292E16F003005166DF /* checkTextviewCell.swift in Sources */,
 				B5E4CEF322A108DE00FC9A3D /* ItenaryaddressCell.swift in Sources */,
 				B5723D7A2818165A008F826A /* SettingsPageVC.swift in Sources */,
 				B56F7A442B072D7B004B9464 /* HomeTypeFilterCell.swift in Sources */,
@@ -3584,6 +3618,7 @@
 				2C024E6522F1C4BA00217EBE /* SpaceListViewController.swift in Sources */,
 				B51F80C62240CBA300E437C1 /* WelcomePageVC.swift in Sources */,
 				B56262712B1B4B700005EB06 /* TopCollectionView.swift in Sources */,
+				5D9731252E16EBD6005166DF /* UITableView+Ext.swift in Sources */,
 				B5E9E1D622A51B6800B91B5B /* AccommadationCell.swift in Sources */,
 				B5CFA78F224A39D800622D64 /* SearchPageVC.swift in Sources */,
 				B553A3D8224C9B5300138107 /* MoreFilterVC.swift in Sources */,
@@ -3610,6 +3645,8 @@
 				B5F28C3B28350DD200075348 /* PaymentCell.swift in Sources */,
 				B528EEF5228E865800C99BFC /* CancellationVC.swift in Sources */,
 				B535D19022438C7000F691C4 /* EmailPageVC.swift in Sources */,
+				5D9731222E16EB54005166DF /* PromotionCell.swift in Sources */,
+				5D9731232E16EB54005166DF /* PromotionVC.swift in Sources */,
 				B58DBF5325FF5B4400EF09E1 /* UpcomingReviewCells.swift in Sources */,
 				B528EF07228E8CF800C99BFC /* contactcheckCell.swift in Sources */,
 				B574B92D2828DDF200ED5339 /* UIScreen+Frame.swift in Sources */,
@@ -3688,7 +3725,6 @@
 				B5E4CEEB22A103C700FC9A3D /* ItenaryImageCell.swift in Sources */,
 				2CFAA45D22FBF209004A2B2E /* LawAndTaxViewController.swift in Sources */,
 				B5771AA22244E07F0070DD96 /* ExplorePageVC.swift in Sources */,
-				B528EF0B228E947300C99BFC /* checkTextviewCell.swift in Sources */,
 				B55A7D0822EAC07F0051B62F /* StepTwoCell.swift in Sources */,
 				B55A7D0322EAC0600051B62F /* StepOneCell.swift in Sources */,
 				B5E87EFF2600E481000B37A3 /* UpdatedReviewCells.swift in Sources */,

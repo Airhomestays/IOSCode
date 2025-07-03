@@ -81,6 +81,8 @@ class RequestbookVC: UIViewController,UITableViewDelegate,UITableViewDataSource,
     var hasPett = false
     var hasVisitor = false
     var dynamicCells = 0 //1 //GST
+    var isPromotionApplied = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         offlineView.backgroundColor =  UIColor(named: "Button_Grey_Color")
@@ -269,6 +271,15 @@ class RequestbookVC: UIViewController,UITableViewDelegate,UITableViewDataSource,
         errorLAbel.text = "\((Utility.shared.getLanguage()?.value(forKey:"error_field"))!)"
         retryBtn.setTitle("\((Utility.shared.getLanguage()?.value(forKey:"retry"))!)", for:.normal)
     }
+    
+    //MARK: setDiscount
+    func setDiscount(cell: RequestBookcellTableViewCell, indexPath: IndexPath, currenySymbol: String) {
+      cell.priceLabel.text =  "Coupon Discount \(indexPath)"
+      
+      cell.priceLeftLabel.text = "-\(currenySymbol)\(100)"
+    }
+    
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 8
     }
@@ -310,11 +321,11 @@ class RequestbookVC: UIViewController,UITableViewDelegate,UITableViewDataSource,
         }
         else if(indexPath.section == 1)
         {
-            return  450//167
+            return  UITableView.automaticDimension //450//167
         }
         else if(indexPath.section == 2)
         {
-            return  180
+            return UITableView.automaticDimension
         }
         else if(indexPath.section == 3)
         {
@@ -714,7 +725,12 @@ class RequestbookVC: UIViewController,UITableViewDelegate,UITableViewDataSource,
             toolBar.barTintColor = UIColor(named: "Button_Grey_Color")
             cell.checkTxtview.inputAccessoryView = toolBar
             cell.checkTxtview.autocorrectionType = UITextAutocorrectionType.no
-          
+            if isPromotionApplied {
+                cell.couponAppliedLabel.isHidden = false
+            }else {
+                cell.couponAppliedLabel.isHidden = true
+            }
+            cell.applyCopounCodeBtn.addTarget(self, action: #selector(applyCouponBtnTapped), for: .touchUpInside)
             return cell
         } else if(indexPath.section == 3) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ReservationCell", for: indexPath)as! ReservationCell
@@ -1186,7 +1202,10 @@ class RequestbookVC: UIViewController,UITableViewDelegate,UITableViewDataSource,
                         cell.priceLabel.text =  "Visitors"
                         
                         cell.priceLeftLabel.text = "\(currencysymbol)\(self.getVisitorPrice())"
-                    } else {
+                    } else if indexPath.row == 4 && isPromotionApplied {
+                      self.setDiscount(cell: cell, indexPath: indexPath, currenySymbol: currencysymbol)
+                    }
+                    else {
                         cell.priceLabel.text =  "GST"
                         
                         cell.priceLeftLabel.text = "\(currencysymbol)\(self.getGST())"
@@ -1530,6 +1549,17 @@ class RequestbookVC: UIViewController,UITableViewDelegate,UITableViewDataSource,
         self.present(cancellationObj, animated: true, completion: nil)
     }
     
+    @objc func applyCouponBtnTapped(_ sender: UIButton) {
+        if isPromotionApplied {
+            isPromotionApplied = false
+            dynamicCells -= 1
+        }
+        let promotionVC = PromotionVC()
+        promotionVC.delegate = self
+        let navigationController = UINavigationController(rootViewController: promotionVC)
+        navigationController.modalPresentationStyle = .overFullScreen
+        self.present(navigationController, animated: true, completion: nil)
+    }
     
     func occupantFilterController(_ occupantFilterController: AirbnbOccupantFilterController, didSaveAdult adult: Int, children: Int, infant: Int, pet: Bool, guestBase: Int, infantLimit: Int, petLimit: Int, visitorLimit: Int) {
         self.adultCount = adult
@@ -1914,6 +1944,20 @@ class RequestbookVC: UIViewController,UITableViewDelegate,UITableViewDataSource,
     
 }
 
+//MARK: Promotion Delegates
+extension RequestbookVC: PromotionDelegate {
+    func didApplyPromotion(type: PromotionType) {
+        if type == .none {
+            isPromotionApplied = false
+        }else {
+            if isPromotionApplied == false {
+                dynamicCells += 1
+            }
+            isPromotionApplied = true
+        }
+        self.requestTable.reloadSections([2,4], with: .automatic)
+    }
+}
 
 public final class GetBillingCalculationQueryy: GraphQLQuery {
   public let operationDefinition =

@@ -9,9 +9,16 @@ class checkTextviewCell: UITableViewCell,UITextViewDelegate {
 
     
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var checkTxtview: UITextView!
+    @IBOutlet weak var applyLabel: UILabel!
+    @IBOutlet weak var applyCopounCodeBtn: UIButton!
+    @IBOutlet weak var couponCodeLabel: UILabel!
+    
+    @IBOutlet weak var couponAppliedLabel: UILabel!
+    
     weak var delegate: checkTextviewCellDelegate?
     var placeholderLabel : UILabel!
-    @IBOutlet weak var checkTxtview: UITextView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         checkTxtview.delegate = self
@@ -45,7 +52,13 @@ class checkTextviewCell: UITableViewCell,UITextViewDelegate {
         if(Utility.shared.isRTLLanguage()) {
             checkTxtview.textAlignment = .right
         }
-        // Initialization code
+        
+        applyLabel.text = Utility.shared.getValue(for: "apply")
+        applyLabel.font = UIFont(name: APP_FONT_SEMIBOLD, size: 14)
+        
+        couponCodeLabel.text = Utility.shared.getValue(for: "copoun_code")
+        couponCodeLabel.textColor = UIColor(named: "Title_Header")
+        couponCodeLabel.font = UIFont(name: APP_FONT_SEMIBOLD, size: 14)
     }
     
     
